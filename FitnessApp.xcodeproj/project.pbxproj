@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6734BD06B50670EFE91F33AA /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F76E34939714F0AA95D091 /* Pods_FitnessApp.framework */; };
 		9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340336D2D758A1600D2BD86 /* AppDelegate.swift */; };
 		934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340336F2D758A1600D2BD86 /* SceneDelegate.swift */; };
 		934033722D758A1600D2BD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033712D758A1600D2BD86 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36F76E34939714F0AA95D091 /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9340336A2D758A1600D2BD86 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9340336D2D758A1600D2BD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9340336F2D758A1600D2BD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		934033762D758A1700D2BD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		934033792D758A1700D2BD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9340337B2D758A1700D2BD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1DC8B196E21C75643612316 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		FD660C2D4C96064AFEC08176 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6734BD06B50670EFE91F33AA /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82486D12A9AAB63CEBF8AB07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36F76E34939714F0AA95D091 /* Pods_FitnessApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		934033612D758A1600D2BD86 = {
 			isa = PBXGroup;
 			children = (
 				9340336C2D758A1600D2BD86 /* FitnessApp */,
 				9340336B2D758A1600D2BD86 /* Products */,
+				B43D4F4B98CECE62C860ED1A /* Pods */,
+				82486D12A9AAB63CEBF8AB07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,81 @@
 		9340336C2D758A1600D2BD86 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				934033852D758C2200D2BD86 /* Extension */,
+				934033822D758C1000D2BD86 /* Common */,
+				934033862D758C4700D2BD86 /* Screens */,
+				934033872D758D1000D2BD86 /* Main */,
+				934033812D758C0400D2BD86 /* Resources */,
+				9340337B2D758A1700D2BD86 /* Info.plist */,
+			);
+			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		934033812D758C0400D2BD86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9340336D2D758A1600D2BD86 /* AppDelegate.swift */,
 				9340336F2D758A1600D2BD86 /* SceneDelegate.swift */,
 				934033712D758A1600D2BD86 /* ViewController.swift */,
 				934033732D758A1600D2BD86 /* Main.storyboard */,
 				934033762D758A1700D2BD86 /* Assets.xcassets */,
 				934033782D758A1700D2BD86 /* LaunchScreen.storyboard */,
-				9340337B2D758A1700D2BD86 /* Info.plist */,
 			);
-			path = FitnessApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		934033822D758C1000D2BD86 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				934033842D758C1E00D2BD86 /* View */,
+				934033832D758C1700D2BD86 /* Model */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		934033832D758C1700D2BD86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		934033842D758C1E00D2BD86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		934033852D758C2200D2BD86 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		934033862D758C4700D2BD86 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		934033872D758D1000D2BD86 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B43D4F4B98CECE62C860ED1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD660C2D4C96064AFEC08176 /* Pods-FitnessApp.debug.xcconfig */,
+				F1DC8B196E21C75643612316 /* Pods-FitnessApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9340337E2D758A1700D2BD86 /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
+				38FCFC29A3B300CED8725521 /* [CP] Check Pods Manifest.lock */,
 				934033662D758A1600D2BD86 /* Sources */,
 				934033672D758A1600D2BD86 /* Frameworks */,
 				934033682D758A1600D2BD86 /* Resources */,
@@ -132,6 +214,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38FCFC29A3B300CED8725521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		934033662D758A1600D2BD86 /* Sources */ = {
@@ -287,6 +394,7 @@
 		};
 		9340337F2D758A1700D2BD86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD660C2D4C96064AFEC08176 /* Pods-FitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +422,7 @@
 		};
 		934033802D758A1700D2BD86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DC8B196E21C75643612316 /* Pods-FitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
