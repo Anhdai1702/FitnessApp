@@ -17,6 +17,14 @@
 		9340338C2D759DDF00D2BD86 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340338A2D759DDF00D2BD86 /* SplashViewController.swift */; };
 		9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9340338B2D759DDF00D2BD86 /* SplashViewController.xib */; };
 		934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340338F2D75B92300D2BD86 /* DefaultStorage.swift */; };
+		934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033942D75D9AA00D2BD86 /* LoginViewController.swift */; };
+		934033972D75D9AA00D2BD86 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033952D75D9AA00D2BD86 /* LoginViewController.xib */; };
+		9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033982D75D9B800D2BD86 /* SignUpViewController.swift */; };
+		9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033992D75D9B800D2BD86 /* SignUpViewController.xib */; };
+		9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340339C2D75D9CD00D2BD86 /* OnboardingViewController.swift */; };
+		9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9340339D2D75D9CD00D2BD86 /* OnboardingViewController.xib */; };
+		934033A32D75DACF00D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033A12D75DACF00D2BD86 /* HomeViewController.swift */; };
+		934033A42D75DACF00D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033A22D75DACF00D2BD86 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		9340338A2D759DDF00D2BD86 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9340338B2D759DDF00D2BD86 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		9340338F2D75B92300D2BD86 /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
+		934033942D75D9AA00D2BD86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		934033952D75D9AA00D2BD86 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		934033982D75D9B800D2BD86 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		934033992D75D9B800D2BD86 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		9340339C2D75D9CD00D2BD86 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		9340339D2D75D9CD00D2BD86 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		934033A12D75DACF00D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		934033A22D75DACF00D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		F1DC8B196E21C75643612316 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		FD660C2D4C96064AFEC08176 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +150,7 @@
 		934033862D758C4700D2BD86 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				934033A02D75DAB800D2BD86 /* HomeViewController */,
 				934033892D759D2200D2BD86 /* OnboardingViewController */,
 				934033882D759D0C00D2BD86 /* SplashViewController */,
 			);
@@ -143,6 +160,7 @@
 		934033872D758D1000D2BD86 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				934033912D75D95400D2BD86 /* AuthenticationViewController */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -159,6 +177,8 @@
 		934033892D759D2200D2BD86 /* OnboardingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9340339C2D75D9CD00D2BD86 /* OnboardingViewController.swift */,
+				9340339D2D75D9CD00D2BD86 /* OnboardingViewController.xib */,
 			);
 			path = OnboardingViewController;
 			sourceTree = "<group>";
@@ -169,6 +189,42 @@
 				9340338F2D75B92300D2BD86 /* DefaultStorage.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		934033912D75D95400D2BD86 /* AuthenticationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934033932D75D97900D2BD86 /* SignUpViewController */,
+				934033922D75D96800D2BD86 /* LoginViewController */,
+			);
+			path = AuthenticationViewController;
+			sourceTree = "<group>";
+		};
+		934033922D75D96800D2BD86 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934033942D75D9AA00D2BD86 /* LoginViewController.swift */,
+				934033952D75D9AA00D2BD86 /* LoginViewController.xib */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		934033932D75D97900D2BD86 /* SignUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934033982D75D9B800D2BD86 /* SignUpViewController.swift */,
+				934033992D75D9B800D2BD86 /* SignUpViewController.xib */,
+			);
+			path = SignUpViewController;
+			sourceTree = "<group>";
+		};
+		934033A02D75DAB800D2BD86 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934033A12D75DACF00D2BD86 /* HomeViewController.swift */,
+				934033A22D75DACF00D2BD86 /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		B43D4F4B98CECE62C860ED1A /* Pods */ = {
@@ -240,10 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934033972D75D9AA00D2BD86 /* LoginViewController.xib in Resources */,
 				934033772D758A1700D2BD86 /* Assets.xcassets in Resources */,
 				9340337A2D758A1700D2BD86 /* Base in Resources */,
+				9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */,
 				934033752D758A1600D2BD86 /* Base in Resources */,
+				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
 				9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */,
+				934033A42D75DACF00D2BD86 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
+				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
 				934033722D758A1600D2BD86 /* ViewController.swift in Sources */,
+				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
 				9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */,
+				934033A32D75DACF00D2BD86 /* HomeViewController.swift in Sources */,
 				934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */,
 				934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */,
 				9340338C2D759DDF00D2BD86 /* SplashViewController.swift in Sources */,
@@ -453,6 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -481,6 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
