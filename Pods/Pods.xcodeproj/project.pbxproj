@@ -20,9 +20,9 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		83764C3D5A74500ACB661C973CF6B763 /* Pods-FitnessApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FitnessApp-dummy.m"; sourceTree = "<group>"; };
 		88F6A0C05DAAF4839D498470EFC2DE71 /* Pods-FitnessApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FitnessApp-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CAAC0C3733642B2C357C7FF7028CFA3E /* Pods-FitnessApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FitnessApp-Info.plist"; sourceTree = "<group>"; };
-		D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods-FitnessApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FitnessApp"; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90F9BFD42F0F40C1F4B33AD888177FC /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 		EB73DCAF2FB5F172CF98D060B14257BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods-FitnessApp */,
+				D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods_FitnessApp.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			);
 			name = "Pods-FitnessApp";
 			productName = Pods_FitnessApp;
-			productReference = D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods-FitnessApp */;
+			productReference = D42DF4C6E3CC4722ABEDE0113FA0666A /* Pods_FitnessApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
 			productRefGroup = EB73DCAF2FB5F172CF98D060B14257BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
