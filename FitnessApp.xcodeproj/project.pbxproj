@@ -25,6 +25,12 @@
 		9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9340339D2D75D9CD00D2BD86 /* OnboardingViewController.xib */; };
 		934033A32D75DACF00D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033A12D75DACF00D2BD86 /* HomeViewController.swift */; };
 		934033A42D75DACF00D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033A22D75DACF00D2BD86 /* HomeViewController.xib */; };
+		934033A62D761EC800D2BD86 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033A52D761EC800D2BD86 /* OnboardingModel.swift */; };
+		934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033A92D76E4E100D2BD86 /* MoveCollectionViewCell.swift */; };
+		934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033AA2D76E4E100D2BD86 /* MoveCollectionViewCell.xib */; };
+		934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B02D76E83800D2BD86 /* UIView+Radius.swift */; };
+		934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B12D76E83800D2BD86 /* UIView+Border.swift */; };
+		934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B22D76E83800D2BD86 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,12 @@
 		9340339D2D75D9CD00D2BD86 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		934033A12D75DACF00D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		934033A22D75DACF00D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		934033A52D761EC800D2BD86 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		934033A92D76E4E100D2BD86 /* MoveCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCollectionViewCell.swift; sourceTree = "<group>"; };
+		934033AA2D76E4E100D2BD86 /* MoveCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveCollectionViewCell.xib; sourceTree = "<group>"; };
+		934033B02D76E83800D2BD86 /* UIView+Radius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
+		934033B12D76E83800D2BD86 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		934033B22D76E83800D2BD86 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F1DC8B196E21C75643612316 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		FD660C2D4C96064AFEC08176 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +105,7 @@
 		9340336C2D758A1600D2BD86 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				934033AD2D76E7CC00D2BD86 /* Helper */,
 				934033852D758C2200D2BD86 /* Extensions */,
 				934033822D758C1000D2BD86 /* Common */,
 				934033862D758C4700D2BD86 /* Screens */,
@@ -128,6 +141,7 @@
 		934033832D758C1700D2BD86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				934033A52D761EC800D2BD86 /* OnboardingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +156,7 @@
 		934033852D758C2200D2BD86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				934033A72D76E49A00D2BD86 /* Cells */,
 				9340338E2D75B8CC00D2BD86 /* Storage */,
 			);
 			path = Extensions;
@@ -227,6 +242,41 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
+		934033A72D76E49A00D2BD86 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				934033A82D76E4A300D2BD86 /* OnboardingCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		934033A82D76E4A300D2BD86 /* OnboardingCell */ = {
+			isa = PBXGroup;
+			children = (
+				934033A92D76E4E100D2BD86 /* MoveCollectionViewCell.swift */,
+				934033AA2D76E4E100D2BD86 /* MoveCollectionViewCell.xib */,
+			);
+			path = OnboardingCell;
+			sourceTree = "<group>";
+		};
+		934033AD2D76E7CC00D2BD86 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				934033AE2D76E80C00D2BD86 /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		934033AE2D76E80C00D2BD86 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				934033B22D76E83800D2BD86 /* UIColor+Extension.swift */,
+				934033B12D76E83800D2BD86 /* UIView+Border.swift */,
+				934033B02D76E83800D2BD86 /* UIView+Radius.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B43D4F4B98CECE62C860ED1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +354,7 @@
 				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
 				9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */,
 				934033A42D75DACF00D2BD86 /* HomeViewController.xib in Resources */,
+				934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,9 +410,14 @@
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
 				934033722D758A1600D2BD86 /* ViewController.swift in Sources */,
+				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
+				934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */,
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
+				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
 				9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */,
+				934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */,
 				934033A32D75DACF00D2BD86 /* HomeViewController.swift in Sources */,
+				934033A62D761EC800D2BD86 /* OnboardingModel.swift in Sources */,
 				934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */,
 				934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */,
 				9340338C2D759DDF00D2BD86 /* SplashViewController.swift in Sources */,
