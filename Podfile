@@ -6,17 +6,8 @@ target 'FitnessApp' do
   use_frameworks!
 
   # Pods for FitnessApp
-  pod 'FBSDKLoginKit'
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
   pod 'GoogleSignIn'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Database'
-  pod 'FirebaseRemoteConfig'
-  pod 'Firebase'
   pod 'lottie-ios'
-  pod 'Mixpanel-swift'
-  pod 'NVActivityIndicatorView'
-  pod 'Firebase/Firestore'
-
+  pod 'FBSDKLoginKit'
+  
 end

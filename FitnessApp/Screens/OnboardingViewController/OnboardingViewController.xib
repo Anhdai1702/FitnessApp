@@ -103,9 +103,9 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDa-Jt-FkQ">
                     <rect key="frame" x="304" y="79" width="73" height="35"/>
-                    <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="0.88627450980392153" green="0.94509803921568625" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="Arrow" imagePlacement="trailing" title="Skip" imagePadding="10">
+                    <buttonConfiguration key="configuration" style="plain" image="Arrow_right" imagePlacement="trailing" title="Skip" imagePadding="10">
                         <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
                     </buttonConfiguration>
                     <connections>
@@ -136,7 +136,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Arrow" width="6" height="11"/>
+        <image name="Arrow_right" width="6" height="11"/>
         <image name="Onboarding_1" width="393" height="852"/>
         <image name="Onboarding_2" width="393" height="852"/>
     </resources>

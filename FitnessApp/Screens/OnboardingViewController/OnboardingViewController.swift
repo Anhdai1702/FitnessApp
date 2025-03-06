@@ -80,7 +80,8 @@ extension OnboardingViewController {
                 nextBtn.setTitle("Start", for: .normal)
             }
         } else {
-            print("Onboarding Completed")
+            let vc = LoginViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
