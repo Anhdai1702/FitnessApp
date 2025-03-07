@@ -22,11 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-oI-oSL">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-oI-oSL">
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvb-HA-D4U">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="723"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="pcO-pz-aTu">
                                     <rect key="frame" x="20" y="0.0" width="6" height="11"/>
@@ -294,7 +294,7 @@
                                 <constraint firstItem="cFQ-Hf-IfC" firstAttribute="leading" secondItem="Tvb-HA-D4U" secondAttribute="leading" id="0wG-d0-DQj"/>
                                 <constraint firstItem="pcO-pz-aTu" firstAttribute="leading" secondItem="Tvb-HA-D4U" secondAttribute="leading" constant="20" id="3Vu-lK-3sp"/>
                                 <constraint firstItem="5Rw-62-Wmn" firstAttribute="top" secondItem="v60-At-woH" secondAttribute="bottom" constant="14" id="9m5-an-eMV"/>
-                                <constraint firstAttribute="bottom" secondItem="gg8-II-IPN" secondAttribute="bottom" constant="100" id="C7v-oQ-XVD"/>
+                                <constraint firstAttribute="bottom" secondItem="gg8-II-IPN" secondAttribute="bottom" constant="30" id="C7v-oQ-XVD"/>
                                 <constraint firstItem="NZd-nH-BJf" firstAttribute="top" secondItem="wKl-0y-wpG" secondAttribute="bottom" constant="15" id="DLm-IL-cLK"/>
                                 <constraint firstItem="MEY-zF-byg" firstAttribute="top" secondItem="cFQ-Hf-IfC" secondAttribute="bottom" constant="30" id="EPn-Md-xaP"/>
                                 <constraint firstItem="zwJ-Qq-VRh" firstAttribute="centerX" secondItem="Tvb-HA-D4U" secondAttribute="centerX" id="GlQ-aM-VNK"/>
