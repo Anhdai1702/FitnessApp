@@ -14,6 +14,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigateToScreen()
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func navigateToScreen() {

@@ -36,6 +36,7 @@
 		936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936152062D79EFB800596027 /* ForgetPasswordViewController.swift */; };
 		9361520B2D79F0E300596027 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361520A2D79F0E300596027 /* PushViewController.swift */; };
 		93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93A44B592D77691000F01324 /* GoogleService-Info.plist */; };
+		93E47FDD2D7B4EF3008AF6E4 /* RegistrationConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */; };
 		93EED49D2D787EC000E55018 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49C2D787EC000E55018 /* FirebaseAnalytics */; };
 		93EED49F2D787EC000E55018 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49E2D787EC000E55018 /* FirebaseAuth */; };
 		93EED4A12D787EC000E55018 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A02D787EC000E55018 /* FirebaseCore */; };
@@ -78,6 +79,7 @@
 		936152072D79EFB800596027 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		9361520A2D79F0E300596027 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		93A44B592D77691000F01324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 		934033932D75D97900D2BD86 /* SignUpViewController */ = {
 			isa = PBXGroup;
 			children = (
+				93E47FDB2D7B4EAE008AF6E4 /* RegistrationConditions */,
 				934033982D75D9B800D2BD86 /* SignUpViewController.swift */,
 				934033992D75D9B800D2BD86 /* SignUpViewController.xib */,
 			);
@@ -310,6 +313,14 @@
 				936152072D79EFB800596027 /* ForgetPasswordViewController.xib */,
 			);
 			path = ForgetPasswordViewController;
+			sourceTree = "<group>";
+		};
+		93E47FDB2D7B4EAE008AF6E4 /* RegistrationConditions */ = {
+			isa = PBXGroup;
+			children = (
+				93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */,
+			);
+			path = RegistrationConditions;
 			sourceTree = "<group>";
 		};
 		B43D4F4B98CECE62C860ED1A /* Pods */ = {
@@ -454,6 +465,7 @@
 				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
 				934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */,
 				934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */,
+				93E47FDD2D7B4EF3008AF6E4 /* RegistrationConditions.swift in Sources */,
 				930F27AB2D7849AA0085D429 /* UIAlert+Extension.swift in Sources */,
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
 				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
