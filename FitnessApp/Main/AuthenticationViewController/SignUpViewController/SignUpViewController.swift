@@ -14,13 +14,23 @@ import LocalAuthentication
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet private weak var createAccountLabel: UILabel!
+    @IBOutlet private weak var startLabel: UILabel!
+    @IBOutlet private weak var fullNameLabel: UILabel!
+    @IBOutlet private weak var emailAndMobileLabel: UILabel!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var confirmPasswordLabel: UILabel!
+    @IBOutlet private weak var termsOfUseLabel: UILabel!
+    @IBOutlet private weak var orSignUpLabel: UILabel!
+    @IBOutlet private weak var loginLabel: UILabel!
+    
     @IBOutlet private weak var fullNameTextField: UITextField!
     @IBOutlet private weak var emailAndNumberTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
-    @IBOutlet private weak var termsOfUseLabel: UILabel!
-    @IBOutlet private weak var loginLabel: UILabel!
     
+    @IBOutlet private weak var signUpBtn: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -31,7 +41,6 @@ class SignUpViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
-
 
 // MARK: - Actions
 extension SignUpViewController {
@@ -62,32 +71,50 @@ extension SignUpViewController {
     
     private func setupUI() {
         setupLabelStyle()
+        setupLocalized()
+        setupLoginLabel()
+    }
+    
+    private func setupLocalized() {
+        createAccountLabel.text = "create_account".localized()
+        startLabel.text = "start".localized()
+        fullNameLabel.text = "full_name".localized()
+        emailAndMobileLabel.text = "email".localized()
+        passwordLabel.text = "password".localized()
+        confirmPasswordLabel.text = "confirm_password".localized()
+        loginLabel.text = "login_prompt".localized()
+        // add placeholder 
+        fullNameTextField.placeholder = "full_name".localized()
+        emailAndNumberTextField.placeholder = "email_or_phone".localized()
+        passwordTextField.placeholder = "enter_password".localized()
+        confirmPasswordTextField.placeholder = "confirm_password".localized()
+
     }
     
     private func setupLabelStyle() {
-        let text1 = "By continuing, you agree to\n"
-        let terms = "Terms of Use"
-        let and = " and "
-        let privacy = "Privacy Policy."
+        let text1 = "terms_of_use_prefix".localized()
+        let terms = "terms_of_use".localized()
+        let and = "and".localized()
+        let privacy = "privacy_policy".localized()
         
         let fullText = NSMutableAttributedString(string: text1, attributes: [
-            .foregroundColor: UIColor.lightGray,
-            .font: UIFont.systemFont(ofSize: 14)
+            .foregroundColor: UIColor.systemGray5,
+            .font: UIFont.systemFont(ofSize: 12)
         ])
         
         let termsAttr = NSAttributedString(string: terms, attributes: [
             .foregroundColor: UIColor.white,
-            .font: UIFont.boldSystemFont(ofSize: 14)
+            .font: UIFont.boldSystemFont(ofSize: 12)
         ])
         
         let andAttr = NSAttributedString(string: and, attributes: [
-            .foregroundColor: UIColor.lightGray,
-            .font: UIFont.systemFont(ofSize: 14)
+            .foregroundColor: UIColor.systemGray5,
+            .font: UIFont.systemFont(ofSize: 12)
         ])
         
         let privacyAttr = NSAttributedString(string: privacy, attributes: [
             .foregroundColor: UIColor.white,
-            .font: UIFont.boldSystemFont(ofSize: 14)
+            .font: UIFont.boldSystemFont(ofSize: 12)
         ])
         
         fullText.append(termsAttr)
@@ -98,6 +125,30 @@ extension SignUpViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped(_:)))
         termsOfUseLabel.isUserInteractionEnabled = true
         termsOfUseLabel.addGestureRecognizer(tapGesture)
+    }
+    
+    private func setupLoginLabel() {
+        let textOne = "already_have_an_account".localized()
+        let termTwo = "login_account".localized()
+        let fullText = NSMutableAttributedString(string: textOne, attributes: [
+            .foregroundColor: UIColor.systemGray5,
+            .font: UIFont.systemFont(ofSize: 12)
+        ])
+        
+        let termsAttr = NSAttributedString(string: termTwo, attributes: [
+            .foregroundColor: UIColor(resource: .lightGreen),
+            .font: UIFont.systemFont(ofSize: 12)
+        ])
+        
+        fullText.append(termsAttr)
+        
+        loginLabel.attributedText = fullText
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(loginTapped))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func loginTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc private func labelTapped(_ gesture: UITapGestureRecognizer) {
@@ -112,9 +163,9 @@ extension SignUpViewController {
         
         let index = layoutManager.characterIndex(for: tapLocation, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
         
-        if (text as NSString).range(of: "Terms of Use").contains(index) {
+        if (text as NSString).range(of: "terms_of_use".localized()).contains(index) {
             //            push(viewControllerType: TermsOfUseViewController.self)
-        } else if (text as NSString).range(of: "Privacy Policy").contains(index) {
+        } else if (text as NSString).range(of: "privacy_policy".localized()).contains(index) {
             //            push(viewControllerType: PrivacyPolicyViewController.self)
         }
     }
@@ -125,28 +176,28 @@ extension SignUpViewController {
             return
         }
         if fullName.isEmpty || emailAndNumber.isEmpty || password.isEmpty || confirmPassword.isEmpty {
-            showAlert(title: "Error", mess: "All fields are required")
+            showAlert(title: "error".localized(), mess: "all_fields_required".localized())
             return
         }
         if fullName.count < 3 {
-            showAlert(title: "Error", mess: "Full name must be at least 3 characters long")
+            showAlert(title: "error".localized(), mess: "full_name_min_length".localized())
             return
         }
         if emailAndNumber.validateEmailOrPhone() == false || emailAndNumber.count < 8 {
-            showAlert(title: "Error", mess: "Email or Phone is invalid")
+            showAlert(title: "error".localized(), mess: "invalid_email_or_phone".localized())
             return
         }
         if password.count < 6 {
-            showAlert(title: "Error", mess: "Password must be at least 6 characters long")
+            showAlert(title: "error".localized(), mess: "password_min_length".localized())
             return
         }
         if password != confirmPassword {
-            showAlert(title: "Error", mess: "Password not match")
+            showAlert(title: "error".localized(), mess: "password_not_match".localized())
             return
         }
         Auth.auth().createUser(withEmail: emailAndNumberTextField.text!, password: passwordTextField.text!) { result, error in
             self.hidesBottomBarWhenPushed = false
-            self.showAlert(title: "Congratulations", mess: "sign up successfully")
+            self.showAlert(title: "congratulations".localized(), mess: "sign_up_successfully".localized())
         }
     }
     
@@ -173,7 +224,7 @@ extension SignUpViewController {
     private func signUpFacebook() {
         LoginManager().logIn(permissions: ["public_profile", "email"], from: self) { result, error in
             if let error = error {
-                self.showAlert(title: "Error", mess: "\(error.localizedDescription)")
+                self.showAlert(title: "error".localized(), mess: "\(error.localizedDescription)")
             } else {
                 print("next viewController")
             }
@@ -191,9 +242,9 @@ extension SignUpViewController {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 DispatchQueue.main.async {
                     if success {
-                        self.showAlert(title: "Notification", mess: "Successfully")
+                        self.showAlert(title: "notification".localized(), mess: "successfully".localized())
                     } else {
-                        self.self .showAlert(title: "Error", mess: "\(String(describing: error?.localizedDescription))")
+                        self.self .showAlert(title: "error".localized(), mess: "\(String(describing: error?.localizedDescription))")
                     }
                 }
             }

@@ -11,12 +11,20 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="FitnessApp" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordLabel" destination="qWx-Dx-ZSk" id="spg-L9-Lyb"/>
                 <outlet property="confirmPasswordTextField" destination="hh4-RS-jDm" id="wA7-Gu-z8Z"/>
+                <outlet property="createAccountLabel" destination="IGD-61-Slb" id="cNu-T6-4vY"/>
+                <outlet property="emailAndMobileLabel" destination="dSF-M7-lOx" id="K7G-oG-YYB"/>
                 <outlet property="emailAndNumberTextField" destination="3Kt-xX-CWb" id="QSc-XQ-l6h"/>
+                <outlet property="fullNameLabel" destination="f8Y-g5-c7p" id="t2C-wG-zYx"/>
                 <outlet property="fullNameTextField" destination="1ZO-ir-g6G" id="KoQ-Dj-i9l"/>
                 <outlet property="loginLabel" destination="tGP-Tj-YNs" id="Sgw-jR-8Y2"/>
+                <outlet property="orSignUpLabel" destination="F9k-qc-tIh" id="bXS-Me-dfu"/>
+                <outlet property="passwordLabel" destination="Qcd-GH-E6L" id="uY5-Yu-DId"/>
                 <outlet property="passwordTextField" destination="eky-3E-8vh" id="J24-tk-qVw"/>
-                <outlet property="termsOfUseLabel" destination="5yI-WJ-ZhN" id="8jB-Rb-m9c"/>
+                <outlet property="signUpBtn" destination="hrc-rk-o1s" id="iKr-LJ-i2t"/>
+                <outlet property="startLabel" destination="yyB-3o-jC3" id="FG8-6Q-ZlS"/>
+                <outlet property="termsOfUseLabel" destination="5yI-WJ-ZhN" id="1mj-ir-VOX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -188,6 +196,13 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="22"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="S3U-Yy-Bh4"/>
@@ -351,7 +366,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="xTl-7p-Jh4" firstAttribute="width" secondItem="7sV-b2-VLR" secondAttribute="width" id="HKz-RY-YwV"/>
                         <constraint firstItem="xTl-7p-Jh4" firstAttribute="leading" secondItem="7sV-b2-VLR" secondAttribute="leading" id="YvG-d1-kkD"/>
@@ -362,7 +377,7 @@
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7sV-b2-VLR" secondAttribute="trailing" id="NGC-XQ-TNo"/>
                 <constraint firstAttribute="bottom" secondItem="7sV-b2-VLR" secondAttribute="bottom" id="RB0-Wc-6oy"/>

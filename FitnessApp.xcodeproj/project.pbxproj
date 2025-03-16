@@ -11,15 +11,11 @@
 		930F27AB2D7849AA0085D429 /* UIAlert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F27AA2D7849A80085D429 /* UIAlert+Extension.swift */; };
 		9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340336D2D758A1600D2BD86 /* AppDelegate.swift */; };
 		934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340336F2D758A1600D2BD86 /* SceneDelegate.swift */; };
-		934033722D758A1600D2BD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033712D758A1600D2BD86 /* ViewController.swift */; };
-		934033752D758A1600D2BD86 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 934033742D758A1600D2BD86 /* Base */; };
 		934033772D758A1700D2BD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934033762D758A1700D2BD86 /* Assets.xcassets */; };
-		9340337A2D758A1700D2BD86 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 934033792D758A1700D2BD86 /* Base */; };
 		9340338C2D759DDF00D2BD86 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340338A2D759DDF00D2BD86 /* SplashViewController.swift */; };
 		9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9340338B2D759DDF00D2BD86 /* SplashViewController.xib */; };
 		934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340338F2D75B92300D2BD86 /* DefaultStorage.swift */; };
 		934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033942D75D9AA00D2BD86 /* LoginViewController.swift */; };
-		934033972D75D9AA00D2BD86 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033952D75D9AA00D2BD86 /* LoginViewController.xib */; };
 		9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033982D75D9B800D2BD86 /* SignUpViewController.swift */; };
 		9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033992D75D9B800D2BD86 /* SignUpViewController.xib */; };
 		9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9340339C2D75D9CD00D2BD86 /* OnboardingViewController.swift */; };
@@ -36,7 +32,35 @@
 		936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936152062D79EFB800596027 /* ForgetPasswordViewController.swift */; };
 		9361520B2D79F0E300596027 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361520A2D79F0E300596027 /* PushViewController.swift */; };
 		93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93A44B592D77691000F01324 /* GoogleService-Info.plist */; };
+		93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AA480A2D84224800301A3F /* LoginViewController.xib */; };
+		93AA48382D8433CC00301A3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AA48362D8433CC00301A3F /* Localizable.strings */; };
+		93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF7BB2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib */; };
+		93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF7BA2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift */; };
+		93AEF7C02D834EA3006E3CBD /* WeelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF7BF2D834EA3006E3CBD /* WeelCollectionViewCell.xib */; };
+		93AEF7C12D834EA3006E3CBD /* WeelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF7BE2D834EA3006E3CBD /* WeelCollectionViewCell.swift */; };
+		93AEF7C42D8364F2006E3CBD /* GoalSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF7C32D8364F2006E3CBD /* GoalSelectionViewController.xib */; };
+		93AEF7C52D8364F2006E3CBD /* GoalSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF7C22D8364F2006E3CBD /* GoalSelectionViewController.swift */; };
+		93BEDBB22D7EE9340010EE10 /* HeightSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BEDBB02D7EE9340010EE10 /* HeightSelectionViewController.swift */; };
+		93BEDBB32D7EE9340010EE10 /* HeightSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BEDBB12D7EE9340010EE10 /* HeightSelectionViewController.xib */; };
+		93D2345C2D7F0AE60000E945 /* AgeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D2345B2D7F0AE60000E945 /* AgeCollectionViewCell.xib */; };
+		93D2345D2D7F0AE60000E945 /* AgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D2345A2D7F0AE60000E945 /* AgeCollectionViewCell.swift */; };
+		93D234642D7F49700000E945 /* SelectNumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D234632D7F49700000E945 /* SelectNumberCollectionViewCell.xib */; };
+		93D234652D7F49700000E945 /* SelectNumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D234622D7F49700000E945 /* SelectNumberCollectionViewCell.swift */; };
+		93D234682D7F49820000E945 /* NumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D234672D7F49820000E945 /* NumberCollectionViewCell.xib */; };
+		93D234692D7F49820000E945 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D234662D7F49820000E945 /* NumberCollectionViewCell.swift */; };
+		93E102862D837D9300B6011D /* PhysicalActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E102842D837D9300B6011D /* PhysicalActivityViewController.swift */; };
+		93E102872D837D9300B6011D /* PhysicalActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E102852D837D9300B6011D /* PhysicalActivityViewController.xib */; };
 		93E47FDD2D7B4EF3008AF6E4 /* RegistrationConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */; };
+		93E47FE32D7B62CC008AF6E4 /* StartSetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FE12D7B62CC008AF6E4 /* StartSetUpViewController.swift */; };
+		93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E47FE22D7B62CC008AF6E4 /* StartSetUpViewController.xib */; };
+		93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FE72D7C40A8008AF6E4 /* GenderViewController.swift */; };
+		93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E47FE82D7C40A8008AF6E4 /* GenderViewController.xib */; };
+		93E47FF32D7C4161008AF6E4 /* WeightSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FF12D7C4161008AF6E4 /* WeightSelectionViewController.swift */; };
+		93E47FF42D7C4161008AF6E4 /* WeightSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E47FF22D7C4161008AF6E4 /* WeightSelectionViewController.xib */; };
+		93E47FFD2D7C4235008AF6E4 /* AgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E47FFB2D7C4235008AF6E4 /* AgeSelectionViewController.swift */; };
+		93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E47FFC2D7C4235008AF6E4 /* AgeSelectionViewController.xib */; };
+		93E480022D7C4250008AF6E4 /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E480002D7C4250008AF6E4 /* ProfileSetupViewController.swift */; };
+		93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */; };
 		93EED49D2D787EC000E55018 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49C2D787EC000E55018 /* FirebaseAnalytics */; };
 		93EED49F2D787EC000E55018 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49E2D787EC000E55018 /* FirebaseAuth */; };
 		93EED4A12D787EC000E55018 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A02D787EC000E55018 /* FirebaseCore */; };
@@ -53,16 +77,12 @@
 		9340336A2D758A1600D2BD86 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9340336D2D758A1600D2BD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9340336F2D758A1600D2BD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		934033712D758A1600D2BD86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		934033742D758A1600D2BD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		934033762D758A1700D2BD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		934033792D758A1700D2BD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9340337B2D758A1700D2BD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9340338A2D759DDF00D2BD86 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9340338B2D759DDF00D2BD86 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		9340338F2D75B92300D2BD86 /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
 		934033942D75D9AA00D2BD86 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		934033952D75D9AA00D2BD86 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		934033982D75D9B800D2BD86 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		934033992D75D9B800D2BD86 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		9340339C2D75D9CD00D2BD86 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +99,37 @@
 		936152072D79EFB800596027 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		9361520A2D79F0E300596027 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		93A44B592D77691000F01324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93AA480A2D84224800301A3F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		93AA48282D842B2800301A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93AA48372D8433CC00301A3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93AA48392D8433DB00301A3F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93AEF7BA2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeightCollectionViewCell.swift; sourceTree = "<group>"; };
+		93AEF7BB2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectHeightCollectionViewCell.xib; sourceTree = "<group>"; };
+		93AEF7BE2D834EA3006E3CBD /* WeelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeelCollectionViewCell.swift; sourceTree = "<group>"; };
+		93AEF7BF2D834EA3006E3CBD /* WeelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeelCollectionViewCell.xib; sourceTree = "<group>"; };
+		93AEF7C22D8364F2006E3CBD /* GoalSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSelectionViewController.swift; sourceTree = "<group>"; };
+		93AEF7C32D8364F2006E3CBD /* GoalSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalSelectionViewController.xib; sourceTree = "<group>"; };
+		93BEDBB02D7EE9340010EE10 /* HeightSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightSelectionViewController.swift; sourceTree = "<group>"; };
+		93BEDBB12D7EE9340010EE10 /* HeightSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeightSelectionViewController.xib; sourceTree = "<group>"; };
+		93D2345A2D7F0AE60000E945 /* AgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		93D2345B2D7F0AE60000E945 /* AgeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeCollectionViewCell.xib; sourceTree = "<group>"; };
+		93D234622D7F49700000E945 /* SelectNumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		93D234632D7F49700000E945 /* SelectNumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectNumberCollectionViewCell.xib; sourceTree = "<group>"; };
+		93D234662D7F49820000E945 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		93D234672D7F49820000E945 /* NumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberCollectionViewCell.xib; sourceTree = "<group>"; };
+		93E102842D837D9300B6011D /* PhysicalActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityViewController.swift; sourceTree = "<group>"; };
+		93E102852D837D9300B6011D /* PhysicalActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhysicalActivityViewController.xib; sourceTree = "<group>"; };
 		93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConditions.swift; sourceTree = "<group>"; };
+		93E47FE12D7B62CC008AF6E4 /* StartSetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSetUpViewController.swift; sourceTree = "<group>"; };
+		93E47FE22D7B62CC008AF6E4 /* StartSetUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartSetUpViewController.xib; sourceTree = "<group>"; };
+		93E47FE72D7C40A8008AF6E4 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		93E47FE82D7C40A8008AF6E4 /* GenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderViewController.xib; sourceTree = "<group>"; };
+		93E47FF12D7C4161008AF6E4 /* WeightSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectionViewController.swift; sourceTree = "<group>"; };
+		93E47FF22D7C4161008AF6E4 /* WeightSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightSelectionViewController.xib; sourceTree = "<group>"; };
+		93E47FFB2D7C4235008AF6E4 /* AgeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeSelectionViewController.swift; sourceTree = "<group>"; };
+		93E47FFC2D7C4235008AF6E4 /* AgeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeSelectionViewController.xib; sourceTree = "<group>"; };
+		93E480002D7C4250008AF6E4 /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
+		93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSetupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +167,7 @@
 				834CE95638ACDF1CDB48B8E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		9340336B2D758A1600D2BD86 /* Products */ = {
 			isa = PBXGroup;
@@ -146,10 +197,9 @@
 			children = (
 				9340336D2D758A1600D2BD86 /* AppDelegate.swift */,
 				9340336F2D758A1600D2BD86 /* SceneDelegate.swift */,
-				934033712D758A1600D2BD86 /* ViewController.swift */,
-				934033732D758A1600D2BD86 /* Main.storyboard */,
 				934033762D758A1700D2BD86 /* Assets.xcassets */,
 				934033782D758A1700D2BD86 /* LaunchScreen.storyboard */,
+				93AA48362D8433CC00301A3F /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -199,6 +249,7 @@
 		934033872D758D1000D2BD86 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				93E47FDE2D7B62A6008AF6E4 /* SetUpViewController */,
 				934033B72D772D7E00D2BD86 /* HomeViewController */,
 				934033912D75D95400D2BD86 /* AuthenticationViewController */,
 			);
@@ -245,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				934033942D75D9AA00D2BD86 /* LoginViewController.swift */,
-				934033952D75D9AA00D2BD86 /* LoginViewController.xib */,
+				93AA480A2D84224800301A3F /* LoginViewController.xib */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -315,12 +366,149 @@
 			path = ForgetPasswordViewController;
 			sourceTree = "<group>";
 		};
+		93AEF7B82D834E78006E3CBD /* SelectHeightCell */ = {
+			isa = PBXGroup;
+			children = (
+				93AEF7BA2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift */,
+				93AEF7BB2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib */,
+			);
+			path = SelectHeightCell;
+			sourceTree = "<group>";
+		};
+		93AEF7B92D834E83006E3CBD /* WeelCell */ = {
+			isa = PBXGroup;
+			children = (
+				93AEF7BE2D834EA3006E3CBD /* WeelCollectionViewCell.swift */,
+				93AEF7BF2D834EA3006E3CBD /* WeelCollectionViewCell.xib */,
+			);
+			path = WeelCell;
+			sourceTree = "<group>";
+		};
+		93D234592D7F0ACF0000E945 /* AgeCell */ = {
+			isa = PBXGroup;
+			children = (
+				93D2345A2D7F0AE60000E945 /* AgeCollectionViewCell.swift */,
+				93D2345B2D7F0AE60000E945 /* AgeCollectionViewCell.xib */,
+			);
+			path = AgeCell;
+			sourceTree = "<group>";
+		};
+		93D2345E2D7F493E0000E945 /* NumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				93D234662D7F49820000E945 /* NumberCollectionViewCell.swift */,
+				93D234672D7F49820000E945 /* NumberCollectionViewCell.xib */,
+			);
+			path = NumberCell;
+			sourceTree = "<group>";
+		};
+		93D2345F2D7F49490000E945 /* SelectNumberCell */ = {
+			isa = PBXGroup;
+			children = (
+				93D234622D7F49700000E945 /* SelectNumberCollectionViewCell.swift */,
+				93D234632D7F49700000E945 /* SelectNumberCollectionViewCell.xib */,
+			);
+			path = SelectNumberCell;
+			sourceTree = "<group>";
+		};
 		93E47FDB2D7B4EAE008AF6E4 /* RegistrationConditions */ = {
 			isa = PBXGroup;
 			children = (
 				93E47FDC2D7B4EF3008AF6E4 /* RegistrationConditions.swift */,
 			);
 			path = RegistrationConditions;
+			sourceTree = "<group>";
+		};
+		93E47FDE2D7B62A6008AF6E4 /* SetUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93E47FFF2D7C4247008AF6E4 /* ProfileSetupViewController */,
+				93E47FFA2D7C422A008AF6E4 /* AgeSelectionViewController */,
+				93E47FF72D7C41C7008AF6E4 /* PhysicalActivityViewController */,
+				93E47FF62D7C41C1008AF6E4 /* GoalSelectionViewController */,
+				93E47FF52D7C41B4008AF6E4 /* HeightSelectionViewController */,
+				93E47FF02D7C4156008AF6E4 /* WeightSelectionViewController */,
+				93E47FE62D7C4087008AF6E4 /* GenderViewController */,
+				93E47FE52D7C3F9B008AF6E4 /* StartSetUpViewController */,
+			);
+			path = SetUpViewController;
+			sourceTree = "<group>";
+		};
+		93E47FE52D7C3F9B008AF6E4 /* StartSetUpViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93E47FE12D7B62CC008AF6E4 /* StartSetUpViewController.swift */,
+				93E47FE22D7B62CC008AF6E4 /* StartSetUpViewController.xib */,
+			);
+			path = StartSetUpViewController;
+			sourceTree = "<group>";
+		};
+		93E47FE62D7C4087008AF6E4 /* GenderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93E47FE72D7C40A8008AF6E4 /* GenderViewController.swift */,
+				93E47FE82D7C40A8008AF6E4 /* GenderViewController.xib */,
+			);
+			path = GenderViewController;
+			sourceTree = "<group>";
+		};
+		93E47FF02D7C4156008AF6E4 /* WeightSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93D2345F2D7F49490000E945 /* SelectNumberCell */,
+				93D2345E2D7F493E0000E945 /* NumberCell */,
+				93E47FF12D7C4161008AF6E4 /* WeightSelectionViewController.swift */,
+				93E47FF22D7C4161008AF6E4 /* WeightSelectionViewController.xib */,
+			);
+			path = WeightSelectionViewController;
+			sourceTree = "<group>";
+		};
+		93E47FF52D7C41B4008AF6E4 /* HeightSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93AEF7B92D834E83006E3CBD /* WeelCell */,
+				93AEF7B82D834E78006E3CBD /* SelectHeightCell */,
+				93BEDBB02D7EE9340010EE10 /* HeightSelectionViewController.swift */,
+				93BEDBB12D7EE9340010EE10 /* HeightSelectionViewController.xib */,
+			);
+			path = HeightSelectionViewController;
+			sourceTree = "<group>";
+		};
+		93E47FF62D7C41C1008AF6E4 /* GoalSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93AEF7C22D8364F2006E3CBD /* GoalSelectionViewController.swift */,
+				93AEF7C32D8364F2006E3CBD /* GoalSelectionViewController.xib */,
+			);
+			path = GoalSelectionViewController;
+			sourceTree = "<group>";
+		};
+		93E47FF72D7C41C7008AF6E4 /* PhysicalActivityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93E102842D837D9300B6011D /* PhysicalActivityViewController.swift */,
+				93E102852D837D9300B6011D /* PhysicalActivityViewController.xib */,
+			);
+			path = PhysicalActivityViewController;
+			sourceTree = "<group>";
+		};
+		93E47FFA2D7C422A008AF6E4 /* AgeSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93D234592D7F0ACF0000E945 /* AgeCell */,
+				93E47FFB2D7C4235008AF6E4 /* AgeSelectionViewController.swift */,
+				93E47FFC2D7C4235008AF6E4 /* AgeSelectionViewController.xib */,
+			);
+			path = AgeSelectionViewController;
+			sourceTree = "<group>";
+		};
+		93E47FFF2D7C4247008AF6E4 /* ProfileSetupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93E480002D7C4250008AF6E4 /* ProfileSetupViewController.swift */,
+				93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */,
+			);
+			path = ProfileSetupViewController;
 			sourceTree = "<group>";
 		};
 		B43D4F4B98CECE62C860ED1A /* Pods */ = {
@@ -376,6 +564,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 934033612D758A1600D2BD86;
 			packageReferences = (
@@ -395,15 +584,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934033972D75D9AA00D2BD86 /* LoginViewController.xib in Resources */,
+				93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */,
+				93E47FF42D7C4161008AF6E4 /* WeightSelectionViewController.xib in Resources */,
+				93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */,
+				93E102872D837D9300B6011D /* PhysicalActivityViewController.xib in Resources */,
 				936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */,
+				93BEDBB32D7EE9340010EE10 /* HeightSelectionViewController.xib in Resources */,
 				934033772D758A1700D2BD86 /* Assets.xcassets in Resources */,
-				9340337A2D758A1700D2BD86 /* Base in Resources */,
+				93AEF7C42D8364F2006E3CBD /* GoalSelectionViewController.xib in Resources */,
+				93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */,
 				9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */,
-				934033752D758A1600D2BD86 /* Base in Resources */,
+				93D234682D7F49820000E945 /* NumberCollectionViewCell.xib in Resources */,
+				93AEF7C02D834EA3006E3CBD /* WeelCollectionViewCell.xib in Resources */,
+				93D234642D7F49700000E945 /* SelectNumberCollectionViewCell.xib in Resources */,
+				93AA48382D8433CC00301A3F /* Localizable.strings in Resources */,
+				93D2345C2D7F0AE60000E945 /* AgeCollectionViewCell.xib in Resources */,
+				93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */,
 				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
 				9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */,
 				93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */,
+				93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */,
+				93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */,
 				934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */,
 				934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */,
 			);
@@ -459,16 +660,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
+				93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
-				934033722D758A1600D2BD86 /* ViewController.swift in Sources */,
+				93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */,
+				93E47FF32D7C4161008AF6E4 /* WeightSelectionViewController.swift in Sources */,
 				9361520B2D79F0E300596027 /* PushViewController.swift in Sources */,
 				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
 				934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */,
 				934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */,
+				93D234652D7F49700000E945 /* SelectNumberCollectionViewCell.swift in Sources */,
+				93E102862D837D9300B6011D /* PhysicalActivityViewController.swift in Sources */,
+				93D234692D7F49820000E945 /* NumberCollectionViewCell.swift in Sources */,
 				93E47FDD2D7B4EF3008AF6E4 /* RegistrationConditions.swift in Sources */,
+				93E47FE32D7B62CC008AF6E4 /* StartSetUpViewController.swift in Sources */,
 				930F27AB2D7849AA0085D429 /* UIAlert+Extension.swift in Sources */,
+				93D2345D2D7F0AE60000E945 /* AgeCollectionViewCell.swift in Sources */,
+				93BEDBB22D7EE9340010EE10 /* HeightSelectionViewController.swift in Sources */,
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
+				93AEF7C52D8364F2006E3CBD /* GoalSelectionViewController.swift in Sources */,
 				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
+				93AEF7C12D834EA3006E3CBD /* WeelCollectionViewCell.swift in Sources */,
+				93E47FFD2D7C4235008AF6E4 /* AgeSelectionViewController.swift in Sources */,
+				93E480022D7C4250008AF6E4 /* ProfileSetupViewController.swift in Sources */,
 				9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */,
 				934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */,
 				934033A62D761EC800D2BD86 /* OnboardingModel.swift in Sources */,
@@ -482,20 +695,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		934033732D758A1600D2BD86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				934033742D758A1600D2BD86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		934033782D758A1700D2BD86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				934033792D758A1700D2BD86 /* Base */,
+				93AA48282D842B2800301A3F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93AA48362D8433CC00301A3F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93AA48372D8433CC00301A3F /* en */,
+				93AA48392D8433DB00301A3F /* vi */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -506,6 +720,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -560,6 +775,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -569,6 +785,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -616,6 +833,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -636,9 +854,11 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "please allow the faceID ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -672,9 +892,11 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitnessApp/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "please allow the faceID ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;

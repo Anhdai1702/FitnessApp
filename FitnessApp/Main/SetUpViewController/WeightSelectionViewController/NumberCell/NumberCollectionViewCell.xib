@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NumberCollectionViewCell" customModule="FitnessApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="292" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zve-Uo-gGr">
+                        <rect key="frame" x="0.0" y="0.0" width="292" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIA-6g-rJk">
+                                <rect key="frame" x="123.99999999999999" y="52.666666666666664" width="44.333333333333329" height="20.999999999999993"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DIA-6g-rJk" firstAttribute="centerY" secondItem="zve-Uo-gGr" secondAttribute="centerY" id="3zR-4K-KbD"/>
+                            <constraint firstItem="DIA-6g-rJk" firstAttribute="centerX" secondItem="zve-Uo-gGr" secondAttribute="centerX" id="sTq-eL-x4e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zve-Uo-gGr" secondAttribute="trailing" id="1K9-jm-aKx"/>
+                <constraint firstItem="zve-Uo-gGr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8EC-Ye-Jkg"/>
+                <constraint firstAttribute="bottom" secondItem="zve-Uo-gGr" secondAttribute="bottom" id="CtF-QW-nCE"/>
+                <constraint firstItem="zve-Uo-gGr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SGu-N0-fio"/>
+            </constraints>
+            <size key="customSize" width="292" height="126"/>
+            <connections>
+                <outlet property="numberLabel" destination="DIA-6g-rJk" id="rFs-ml-2cs"/>
+            </connections>
+            <point key="canvasLocation" x="320.61068702290078" y="59.154929577464792"/>
+        </collectionViewCell>
+    </objects>
+</document>

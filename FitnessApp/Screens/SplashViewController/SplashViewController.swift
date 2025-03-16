@@ -14,6 +14,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigateToScreen()
+        updateLanguageIfNeeded()
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -61,4 +62,18 @@ class SplashViewController: UIViewController {
         // Check if the user has viewed Onboarding
         return !defaultStorage.noFirstTimeLaunch
     }
+}
+
+extension SplashViewController{
+  func updateLanguageIfNeeded() {
+    guard defaultStorage.didLanguageSetup == false else { return }
+    let langStr = Locale.current.languageCode
+    switch langStr {
+    case "vi":
+      defaultStorage.currentLanguage = "vi"
+    default:
+      defaultStorage.currentLanguage = "en"
+    }
+    defaultStorage.didLanguageSetup = true
+  }
 }

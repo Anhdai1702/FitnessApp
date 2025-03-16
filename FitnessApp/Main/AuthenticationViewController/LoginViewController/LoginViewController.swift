@@ -12,13 +12,24 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import LocalAuthentication
 
-
 class LoginViewController: UIViewController {
+    
     // outlets
+    @IBOutlet private weak var loginLabel: UILabel!
+    @IBOutlet private weak var welcomeLabel: UILabel!
+    @IBOutlet private weak var detailLabel: UILabel!
+    @IBOutlet private weak var usernameLabel: UILabel!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var orSignUpLabel: UILabel!
+    
+    @IBOutlet private weak var forgotPasswordBtn: UIButton!
+    
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var noAccountLabel: UILabel!
     @IBOutlet private weak var logInBtn: UIButton!
+    
+    let defaultStorage = DefaultsStorageImpl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +73,10 @@ extension LoginViewController {
 // MARK: - Custom methods
 extension LoginViewController {
     
-    
-    // setup UI
     private func setupUI() {
         setupLabelStyle()
         setupDismissKeyboard()
+        setupLocazied()
     }
     private func setupDismissKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -77,14 +87,31 @@ extension LoginViewController {
         view.endEditing(true)
     }
     
+    private func setupLocazied() {
+        loginLabel.text = "login_account".localized()
+        welcomeLabel.text = "Welcome_back_to".localized()
+        detailLabel.text = "detail_introduce".localized()
+        usernameLabel.text = "email".localized()
+        passwordLabel.text = "password".localized()
+        orSignUpLabel.text = "sign_in_with".localized()
+        forgotPasswordBtn.setTitle("forgot_password".localized(), for: .normal)
+        logInBtn.setTitle("login_account".localized(), for: .normal)
+        
+        emailTextField.placeholder = "email_or_phone".localized()
+        passwordTextField.placeholder = "enter_password".localized()
+    }
+    
     private func setupLabelStyle() {
         noAccountLabel.isUserInteractionEnabled = true
-        let text = "Don’t have an account? "
-        let signUpText = "Sign Up"
-        let fullText = NSMutableAttributedString(string: text, attributes: [.foregroundColor: UIColor.black])
+        let text = "no_account".localized()
+        let signUpText = "sign_up".localized()
+        let fullText = NSMutableAttributedString(string: text, attributes: [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.systemFont(ofSize: 12)
+        ])
         let signUpAttr = NSMutableAttributedString(string: signUpText, attributes: [
             .foregroundColor: UIColor(resource: .lightGreen),
-            .font: UIFont.boldSystemFont(ofSize: 12)
+            .font: UIFont.systemFont(ofSize: 12)
         ])
         
         fullText.append(signUpAttr)
@@ -101,7 +128,7 @@ extension LoginViewController {
     // log in email and password
     func checkEmailAndPasswordValidity() {
         guard let email = emailTextField.text, !email.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
-            showAlert(title: "Notification", mess: "No account or password entered")
+            showAlert(title: "notification".localized(), mess: "no_account_or_password".localized())
             return
         }
         loginEmailAndPassword()
@@ -110,7 +137,7 @@ extension LoginViewController {
     private func loginEmailAndPassword() {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { result, error in
             if let error = error {
-                self.showAlert(title: "Error", mess: "\(error.localizedDescription)")
+                self.showAlert(title: "error".localized(), mess: "\(error.localizedDescription)")
             } else {
                 print("1")
             }
@@ -140,7 +167,7 @@ extension LoginViewController {
     private func loginFacebook() {
         LoginManager().logIn(permissions: ["public_profile", "email"], from: self) { result, error in
             if let error = error {
-                self.showAlert(title: "Error", mess: "\(error.localizedDescription)")
+                self.showAlert(title: "error".localized(), mess: "\(error.localizedDescription)")
             } else {
                 print("next viewController")
             }
@@ -158,9 +185,9 @@ extension LoginViewController {
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 DispatchQueue.main.async {
                     if success {
-                        self.showAlert(title: "Notification", mess: "Successfully")
+                        self.showAlert(title: "notification".localized(), mess: "successfully".localized())
                     } else {
-                        self.self .showAlert(title: "Error", mess: "\(String(describing: error?.localizedDescription))")
+                        self.self .showAlert(title: "error".localized(), mess: "\(String(describing: error?.localizedDescription))")
                     }
                 }
             }
