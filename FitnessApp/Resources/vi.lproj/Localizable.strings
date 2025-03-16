@@ -1,0 +1,82 @@
+/* 
+  Localizable.strings
+  FitnessApp
+
+  Created by Phùng Anh Đài  on 14/3/25.
+  
+*/
+
+
+// login
+"login_account" = "Đăng nhập";
+"Welcome_back_to" = "Chào mừng trở lại";
+"detail_introduce" = "FitnessApp giúp bạn tập gym hiệu quả với bài tập phù hợp, hướng dẫn chi tiết và theo dõi tiến trình. Bắt đầu ngay hôm nay!";
+"email" = "Email";
+"password" = "Mật khẩu";
+"sign_in_with" = "Hoặc đăng nhập bằng";
+"forgot_password" = "Quên mật khẩu?";
+"no_account" = "Bạn chưa có tài khoản? ";
+"sign_up" = "Đăng ký";
+"notification" = "Thông báo";
+"error" = "Lỗi";
+"no_account_or_password" = "Chưa nhập tài khoản hoặc mật khẩu";
+"successfully" = "Thành công";
+
+//sign up
+"create_account" = "Tạo tài khoản";
+"start" = "Bắt đầu";
+"full_name" = "Họ và tên";
+"email" = "Email";
+"password" = "Mật khẩu";
+"confirm_password" = "Xác nhận mật khẩu";
+"terms_of_use_prefix" = "Bằng cách tiếp tục, bạn đồng ý với\n";
+"terms_of_use" = "Điều khoản sử dụng";
+"login_prompt" = "Đã có tài khoản? Đăng nhập";
+"privacy_policy" = "Chính sách bảo mật";
+"and" = " và ";
+"congratulations" = "Chúc mừng";
+"sign_up_successfully" = "Đăng ký thành công";
+"all_fields_required" = "Tất cả các trường là bắt buộc";
+"full_name_min_length" = "Tên đầy đủ phải có ít nhất 3 ký tự";
+"invalid_email_or_phone" = "Email hoặc số điện thoại không hợp lệ";
+"password_min_length" = "Mật khẩu phải có ít nhất 6 ký tự";
+"password_not_match" = "Mật khẩu không khớp";
+"already_have_an_account" = "Bạn đã có tài khoản? ";
+"full_name" = "Họ và tên";
+"email_or_phone" = "Email hoặc Số điện thoại";
+"enter_password" = "Nhập mật khẩu";
+"confirm_password" = "Xác nhận mật khẩu";
+
+"consistency_message" = "Kiên trì là\nchìa khóa để tiến bộ.\nĐừng bỏ cuộc!";
+
+"next" = "Tiếp tục";
+"back" = "Trở lại";
+
+"question_gender" = "Giới tính của bạn là gì";
+"enter_gender" = "Bạn phải nhập giới tính";
+"male" = "Nam";
+"female" = "Nữ";
+
+"age_question" = "Bạn bao nhiêu tuổi?";
+
+"weight_question" = "Cân nặng của bạn là bao nhiêu?";
+
+"height_question" = "Chiều cao của bạn?";
+
+"goal_question" = "Mục tiêu của bạn là gì?";
+"lose_weight" = "Giảm Cân";
+"gain_weight" = "Tăng Cân";
+"muscle_mass_gain" = "Tăng Cơ";
+"shape_body" = "Săn Chắc Cơ Thể";
+"others" = "Khác";
+
+"physical_question" = "Trình độ thể chất của bạn là gì?";
+"beginner" = "Người mới";
+"intermediate" = "Trung cấp";
+"advance" = "Nâng cao";
+"not_selected" = "Bạn chưa chọn";
+
+"start_app" = "Bắt đầu";
+"mobile_number" = "Số điện thoại";
+"nick_name" = "Biệt danh";
+"your_profile" = "Hồ sơ của bạn";

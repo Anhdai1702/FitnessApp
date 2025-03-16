@@ -8,8 +8,11 @@
 import Foundation
 
 private struct DefaultsStorageKeys {
-  static let noFirstTimeLaunchKey = "noFirstTimeLaunchKey"
+    static let noFirstTimeLaunchKey = "noFirstTimeLaunchKey"
     static let currentLanguageKey = "CurrentLanguageKey"
+    static let isVietnamesChecked = "IsVietnamesChecked"
+    static let isEnglishChecked = "IsEnglishChecked"
+    static let didLanguageSetupKey = "DidLanguageSetupKey"
 }
 
 protocol UserDefaultsProvider {
@@ -36,9 +39,11 @@ extension UserDefaults: UserDefaultsProvider {
 
 protocol DefaultsStorage {
     
-  var noFirstTimeLaunch: Bool { get set }
-  var currentLanguage: String { get set }
-
+    var noFirstTimeLaunch: Bool { get set }
+    var currentLanguage: String { get set }
+    var didLanguageSetup: Bool { get set }
+    var isVietnamesChecked: Bool { get set }
+    var isEnglishChecked: Bool { get set }
 }
 
 class DefaultsStorageImpl: DefaultsStorage {
@@ -75,6 +80,34 @@ class DefaultsStorageImpl: DefaultsStorage {
       defaults.set(newValue, forKey: DefaultsStorageKeys.currentLanguageKey)
     }
   }
+    
+    var isVietnamesChecked: Bool {
+        get {
+            return defaults.bool(forKey: DefaultsStorageKeys.isVietnamesChecked)
+        }
+        set {
+            defaults.set(newValue, forKey: DefaultsStorageKeys.isVietnamesChecked)
+        }
+    }
+    
+    var isEnglishChecked: Bool {
+        get {
+            return defaults.bool(forKey: DefaultsStorageKeys.isEnglishChecked)
+        }
+        set {
+            defaults.set(newValue, forKey: DefaultsStorageKeys.isEnglishChecked)
+        }
+    }
+    
+    var didLanguageSetup: Bool {
+      get {
+        return defaults.bool(forKey: DefaultsStorageKeys.didLanguageSetupKey)
+      }
+      
+      set {
+        defaults.set(newValue, forKey: DefaultsStorageKeys.didLanguageSetupKey)
+      }
+    }
     
   private func getCurrencyBasedOnLanguage() -> String {
     switch currentLanguage {

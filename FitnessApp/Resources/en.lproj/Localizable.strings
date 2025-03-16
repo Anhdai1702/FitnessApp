@@ -1,0 +1,88 @@
+/* 
+  Localizable.strings
+  FitnessApp
+
+  Created by Phùng Anh Đài  on 14/3/25.
+  
+*/
+
+// login
+"login_account" = "Log In";
+"Welcome_back_to" = "Welcome back to";
+"detail_introduce" = "FitnessApp helps you work out effectively with personalized exercises, detailed guidance, and progress tracking. Start today!";
+"email" = "Email";
+"password" = "Password";
+"sign_in_with" = "Or sign in with";
+"forgot_password" = "Forgot password?";
+"no_account" = "Don’t have an account? ";
+"sign_up" = "Sign Up";
+"notification" = "Notification";
+"error" = "Error";
+"no_account_or_password" = "No account or password entered";
+"successfully" = "Successfully";
+
+//sign up
+"create_account" = "Create Account";
+"start" = "Let's start!";
+"full_name" = "Full Name";
+"email" = "Email";
+"password" = "Password";
+"confirm_password" = "Confirm Password";
+"terms_of_use_prefix" = "By continuing, you agree to\n";
+"terms_of_use" = "Terms of Use";
+"login_prompt" = "Already have an account? Login";
+"privacy_policy" = "Privacy policy";
+"and" = " and ";
+"congratulations" = "Congratulations";
+"sign_up_successfully" = "Sign up successfully";
+"all_fields_required" = "All fields are required";
+"full_name_min_length" = "Full name must be at least 3 characters long";
+"invalid_email_or_phone" = "Email or Phone is invalid";
+"password_min_length" = "Password must be at least 6 characters long";
+"password_not_match" = "Password not match";
+"already_have_an_account" = "Already have an account? ";
+"full_name" = "Full Name";
+"email_or_phone" = "Email or Phone";
+"enter_password" = "Enter Password";
+"confirm_password" = "Confirm Password";
+
+"consistency_message" = "Consistency Is\nthe Key To progress.\nDon't Give Up!";
+
+
+"next" = "Next";
+"back" = "Back";
+
+"gender_question" = "What’s Your Gender";
+"enter_gender" = "You must enter gender";
+"male" = "Male";
+"female" = "Female";
+"age_question" = "How Old Are You?";
+
+"weight_question" = "What Is Your Weight?";
+
+"height_question" = "What Is Your Weight?";
+
+"goal_question" = "What Is Your Goal?";
+"lose_weight" = "Lose Weight";
+"gain_weight" = "Gain Weight";
+"muscle_mass_gain" = "Muscle Mass Gain";
+"shape_body" = "Shape Body";
+"others" = "Others";
+
+"physical_question" = "What is your fitness level?";
+"beginner" = "Beginner";
+"intermediate" = "Intermediate";
+"advance" = "Advanced";
+"not_selected" = "You have not selected";
+
+"nick_name" = "Nickname";
+"mobile_number" = "Mobile Number";
+"start_app" = "Start";
+"your_profile" = "Fill Your Profile";
+
+
+
+
+
+
+
