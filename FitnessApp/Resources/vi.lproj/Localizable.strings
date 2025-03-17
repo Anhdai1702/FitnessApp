@@ -80,3 +80,7 @@
 "mobile_number" = "Số điện thoại";
 "nick_name" = "Biệt danh";
 "your_profile" = "Hồ sơ của bạn";
+
+"forget_password_title" = "Quên mật khẩu";
+"forget_password_question" = "Quên mật khẩu?";
+

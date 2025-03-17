@@ -28,6 +28,8 @@
 		934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B22D76E83800D2BD86 /* UIColor+Extension.swift */; };
 		934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B82D772D9500D2BD86 /* HomeViewController.swift */; };
 		934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033B92D772D9500D2BD86 /* HomeViewController.xib */; };
+		9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359A70E2D8703450046239D /* SetPasswordViewController.swift */; };
+		9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9359A70F2D8703450046239D /* SetPasswordViewController.xib */; };
 		936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936152072D79EFB800596027 /* ForgetPasswordViewController.xib */; };
 		936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936152062D79EFB800596027 /* ForgetPasswordViewController.swift */; };
 		9361520B2D79F0E300596027 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361520A2D79F0E300596027 /* PushViewController.swift */; };
@@ -95,6 +97,8 @@
 		934033B22D76E83800D2BD86 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		934033B82D772D9500D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		934033B92D772D9500D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9359A70E2D8703450046239D /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
+		9359A70F2D8703450046239D /* SetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPasswordViewController.xib; sourceTree = "<group>"; };
 		936152062D79EFB800596027 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		936152072D79EFB800596027 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		9361520A2D79F0E300596027 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -362,6 +366,8 @@
 			children = (
 				936152062D79EFB800596027 /* ForgetPasswordViewController.swift */,
 				936152072D79EFB800596027 /* ForgetPasswordViewController.xib */,
+				9359A70E2D8703450046239D /* SetPasswordViewController.swift */,
+				9359A70F2D8703450046239D /* SetPasswordViewController.xib */,
 			);
 			path = ForgetPasswordViewController;
 			sourceTree = "<group>";
@@ -604,6 +610,7 @@
 				9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */,
 				93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */,
 				93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */,
+				9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */,
 				93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */,
 				934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */,
 				934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */,
@@ -659,6 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */,
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
 				93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,

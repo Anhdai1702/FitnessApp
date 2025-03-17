@@ -8,22 +8,60 @@
 import UIKit
 
 class ForgetPasswordViewController: UIViewController {
-
+    
+    @IBOutlet private weak var forgetPasswordLabel: UILabel!
+    @IBOutlet private weak var questionForgotPasswordLabel: UILabel!
+    @IBOutlet private weak var detailLabel: UILabel!
+    @IBOutlet private weak var emailLabel: UILabel!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var continueBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    */
+}
 
+// MARK: - Action
+extension ForgetPasswordViewController {
+    
+    @IBAction func didTapBack(_ sender: Any) {
+    }
+    
+    @IBAction func didTapNext(_ sender: Any) {
+        push(viewControllerType: SetPasswordViewController.self)
+    }
+    
+}
+
+// MARK: - Custom UI
+extension ForgetPasswordViewController {
+    
+    private func setupUI() {
+        setupLocalized()
+        setupDismissKeyboard()
+    }
+    
+    private func setupLocalized() {
+        forgetPasswordLabel.text = "forget_password_title".localized()
+        questionForgotPasswordLabel.text = "forget_password_question".localized()
+        detailLabel.text = "detail_introduce".localized()
+        emailLabel.text = "enter_password".localized()
+        continueBtn.setTitle("next".localized(), for: .normal)
+        emailTextField.placeholder = "enter_password".localized()
+    }
+    
+    private func setupDismissKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
