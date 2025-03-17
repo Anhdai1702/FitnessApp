@@ -51,6 +51,7 @@ extension ProfileSetupViewController {
     
     private func setupUI() {
         setupLocalized()
+        setupDismissKeyboard()
     }
     
     private func setupLocalized() {
@@ -62,5 +63,14 @@ extension ProfileSetupViewController {
         emailLabel.text = "email".localized()
         mobileNumberLabel.text = "mobile_number".localized()
         startBtn.setTitle("start_app".localized(), for: .normal)
+    }
+    
+    private func setupDismissKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

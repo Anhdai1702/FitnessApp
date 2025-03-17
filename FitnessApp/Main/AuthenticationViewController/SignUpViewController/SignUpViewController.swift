@@ -73,6 +73,7 @@ extension SignUpViewController {
         setupLabelStyle()
         setupLocalized()
         setupLoginLabel()
+        setupDismissKeyboard()
     }
     
     private func setupLocalized() {
@@ -88,7 +89,15 @@ extension SignUpViewController {
         emailAndNumberTextField.placeholder = "email_or_phone".localized()
         passwordTextField.placeholder = "enter_password".localized()
         confirmPasswordTextField.placeholder = "confirm_password".localized()
-
+    }
+    
+    private func setupDismissKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     private func setupLabelStyle() {
