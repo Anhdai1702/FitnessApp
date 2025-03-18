@@ -11,6 +11,7 @@ class StartSetUpViewController: UIViewController {
 
     @IBOutlet private weak var introduceLabel: UILabel!
     @IBOutlet private weak var detailLabel: UILabel!
+    @IBOutlet weak var setupScrollView: UIScrollView!
     
     @IBOutlet private weak var nextBtn: UIButton!
     
@@ -28,6 +29,7 @@ class StartSetUpViewController: UIViewController {
         introduceLabel.text = "consistency_message".localized()
         detailLabel.text = "detail_introduce".localized()
         nextBtn.setTitle("next".localized(), for: .normal)
+        setupScrollView.contentInsetAdjustmentBehavior = .never
     }
     
     @IBAction func didTapNext(_ sender: Any) {

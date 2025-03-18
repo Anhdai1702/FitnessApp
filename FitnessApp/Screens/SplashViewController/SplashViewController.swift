@@ -40,7 +40,17 @@ class SplashViewController: UIViewController {
         })
     }
     
-    func startDashboardViewController(){
+    func loginViewController(){
+        defaultStorage.loggedInUserIdKey = true
+        let dashBoardViewcontroller = LoginViewController ()
+        let navigationController = UINavigationController(rootViewController: dashBoardViewcontroller)
+        let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        UIView.transition(with: keyWindow!, duration: 0.5, options: .transitionCrossDissolve, animations: {
+            keyWindow?.rootViewController = navigationController
+        }, completion: { _ in })
+    }
+    
+    func homeViewController(){
         let dashBoardViewcontroller = HomeViewController ()
         let navigationController = UINavigationController(rootViewController: dashBoardViewcontroller)
         let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
@@ -54,13 +64,23 @@ class SplashViewController: UIViewController {
         if isFirstLaunch() {
             startOnboardingScreen()
         } else {
-            startDashboardViewController()
+            if isLoggedIn() {
+                loginViewController()
+            }
+            else {
+                homeViewController()
+            }
         }
     }
     
+    // Check if the user has viewed Onboarding
     func isFirstLaunch() -> Bool {
-        // Check if the user has viewed Onboarding
         return !defaultStorage.noFirstTimeLaunch
+    }
+    
+    // Check if you are logged in
+    func isLoggedIn() -> Bool {
+        return !defaultStorage.loggedInUserIdKey
     }
 }
 

@@ -84,3 +84,6 @@
 "forget_password_title" = "Quên mật khẩu";
 "forget_password_question" = "Quên mật khẩu?";
 
+"set_password" = "Đặt lại mật khẩu";
+"finish" = "Hoàn thành";
+

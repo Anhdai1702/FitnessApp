@@ -33,6 +33,9 @@
 		936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936152072D79EFB800596027 /* ForgetPasswordViewController.xib */; };
 		936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936152062D79EFB800596027 /* ForgetPasswordViewController.swift */; };
 		9361520B2D79F0E300596027 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361520A2D79F0E300596027 /* PushViewController.swift */; };
+		9379E8332D89609C00803956 /* PrivacyPolicy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8312D89609C00803956 /* PrivacyPolicy.pdf */; };
+		9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8322D89609C00803956 /* TermsOfUse.pdf */; };
+		9379E8362D8960D400803956 /* FilePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8352D8960D400803956 /* FilePdf.swift */; };
 		93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93A44B592D77691000F01324 /* GoogleService-Info.plist */; };
 		93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AA480A2D84224800301A3F /* LoginViewController.xib */; };
 		93AA48382D8433CC00301A3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AA48362D8433CC00301A3F /* Localizable.strings */; };
@@ -102,6 +105,9 @@
 		936152062D79EFB800596027 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		936152072D79EFB800596027 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		9361520A2D79F0E300596027 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		9379E8312D89609C00803956 /* PrivacyPolicy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PrivacyPolicy.pdf; sourceTree = "<group>"; };
+		9379E8322D89609C00803956 /* TermsOfUse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TermsOfUse.pdf; sourceTree = "<group>"; };
+		9379E8352D8960D400803956 /* FilePdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePdf.swift; sourceTree = "<group>"; };
 		93A44B592D77691000F01324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93AA480A2D84224800301A3F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		93AA48282D842B2800301A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -235,6 +241,7 @@
 		934033852D758C2200D2BD86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9379E8302D89605B00803956 /* FilePdf */,
 				934033A72D76E49A00D2BD86 /* Cells */,
 				9340338E2D75B8CC00D2BD86 /* Storage */,
 			);
@@ -370,6 +377,16 @@
 				9359A70F2D8703450046239D /* SetPasswordViewController.xib */,
 			);
 			path = ForgetPasswordViewController;
+			sourceTree = "<group>";
+		};
+		9379E8302D89605B00803956 /* FilePdf */ = {
+			isa = PBXGroup;
+			children = (
+				9379E8312D89609C00803956 /* PrivacyPolicy.pdf */,
+				9379E8322D89609C00803956 /* TermsOfUse.pdf */,
+				9379E8352D8960D400803956 /* FilePdf.swift */,
+			);
+			path = FilePdf;
 			sourceTree = "<group>";
 		};
 		93AEF7B82D834E78006E3CBD /* SelectHeightCell */ = {
@@ -598,6 +615,8 @@
 				93BEDBB32D7EE9340010EE10 /* HeightSelectionViewController.xib in Resources */,
 				934033772D758A1700D2BD86 /* Assets.xcassets in Resources */,
 				93AEF7C42D8364F2006E3CBD /* GoalSelectionViewController.xib in Resources */,
+				9379E8332D89609C00803956 /* PrivacyPolicy.pdf in Resources */,
+				9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */,
 				93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */,
 				9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */,
 				93D234682D7F49820000E945 /* NumberCollectionViewCell.xib in Resources */,
@@ -668,6 +687,7 @@
 			files = (
 				9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */,
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
+				9379E8362D8960D400803956 /* FilePdf.swift in Sources */,
 				93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
 				93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */,

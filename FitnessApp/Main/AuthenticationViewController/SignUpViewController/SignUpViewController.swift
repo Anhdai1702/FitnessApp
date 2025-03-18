@@ -11,6 +11,7 @@ import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
 import LocalAuthentication
+import PDFKit
 
 class SignUpViewController: UIViewController {
     
@@ -34,6 +35,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupLoginLabel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,6 +95,7 @@ extension SignUpViewController {
     
     private func setupDismissKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
     }
     
@@ -173,9 +176,10 @@ extension SignUpViewController {
         let index = layoutManager.characterIndex(for: tapLocation, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
         
         if (text as NSString).range(of: "terms_of_use".localized()).contains(index) {
-            //            push(viewControllerType: TermsOfUseViewController.self)
+            PDFManager.shared.openPDF(at: "TermsOfUse", from: self)
+
         } else if (text as NSString).range(of: "privacy_policy".localized()).contains(index) {
-            //            push(viewControllerType: PrivacyPolicyViewController.self)
+            PDFManager.shared.openPDF(at: "PrivacyPolicy", from: self)
         }
     }
     
