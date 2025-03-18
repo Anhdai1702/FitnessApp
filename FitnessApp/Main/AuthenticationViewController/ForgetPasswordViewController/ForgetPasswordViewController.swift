@@ -31,6 +31,7 @@ class ForgetPasswordViewController: UIViewController {
 extension ForgetPasswordViewController {
     
     @IBAction func didTapBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func didTapNext(_ sender: Any) {

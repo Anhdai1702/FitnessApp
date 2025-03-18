@@ -83,6 +83,9 @@
 "forget_password_title" = "Forgot Password";
 "forget_password_question" = "Forgot Password?";
 
+"set_password" = "Set Password";
+"finish" = "Finish";
+
 
 
 

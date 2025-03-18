@@ -13,6 +13,7 @@ private struct DefaultsStorageKeys {
     static let isVietnamesChecked = "IsVietnamesChecked"
     static let isEnglishChecked = "IsEnglishChecked"
     static let didLanguageSetupKey = "DidLanguageSetupKey"
+    static let loggedInUserIdKey = "LoggedInUserIdKey"
 }
 
 protocol UserDefaultsProvider {
@@ -44,6 +45,7 @@ protocol DefaultsStorage {
     var didLanguageSetup: Bool { get set }
     var isVietnamesChecked: Bool { get set }
     var isEnglishChecked: Bool { get set }
+    var loggedInUserIdKey: Bool { get set }
 }
 
 class DefaultsStorageImpl: DefaultsStorage {
@@ -70,6 +72,16 @@ class DefaultsStorageImpl: DefaultsStorage {
       defaults.set(newValue, forKey: DefaultsStorageKeys.noFirstTimeLaunchKey)
     }
   }
+    
+  var loggedInUserIdKey: Bool {
+      get {
+          return defaults.bool(forKey: DefaultsStorageKeys.loggedInUserIdKey)
+      }
+      set {
+          defaults.set(newValue, forKey: DefaultsStorageKeys.loggedInUserIdKey)
+      }
+        
+    }
     
   var currentLanguage: String {
     get {

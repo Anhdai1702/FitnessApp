@@ -139,7 +139,7 @@ extension LoginViewController {
             if let error = error {
                 self.showAlert(title: "error".localized(), mess: "\(error.localizedDescription)")
             } else {
-                print("1")
+                self.push(viewControllerType: HomeViewController.self)
             }
         }
     }
