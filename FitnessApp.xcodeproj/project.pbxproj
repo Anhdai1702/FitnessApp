@@ -28,11 +28,21 @@
 		934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B22D76E83800D2BD86 /* UIColor+Extension.swift */; };
 		934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B82D772D9500D2BD86 /* HomeViewController.swift */; };
 		934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033B92D772D9500D2BD86 /* HomeViewController.xib */; };
+		934BD9FE2D8B1A9B00E03185 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */; };
+		934BD9FF2D8B1A9B00E03185 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */; };
 		9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359A70E2D8703450046239D /* SetPasswordViewController.swift */; };
 		9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9359A70F2D8703450046239D /* SetPasswordViewController.xib */; };
 		936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936152072D79EFB800596027 /* ForgetPasswordViewController.xib */; };
 		936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936152062D79EFB800596027 /* ForgetPasswordViewController.swift */; };
 		9361520B2D79F0E300596027 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361520A2D79F0E300596027 /* PushViewController.swift */; };
+		936904692D8B1B280036C375 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936904682D8B1B280036C375 /* TabBarView.swift */; };
+		9369046B2D8B1B350036C375 /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9369046A2D8B1B350036C375 /* TabBarView.xib */; };
+		936904712D8B29E40036C375 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9369046F2D8B29E40036C375 /* ResourcesViewController.swift */; };
+		936904722D8B29E40036C375 /* ResourcesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936904702D8B29E40036C375 /* ResourcesViewController.xib */; };
+		936904752D8B29F50036C375 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936904732D8B29F50036C375 /* FavoriteViewController.swift */; };
+		936904762D8B29F50036C375 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936904742D8B29F50036C375 /* FavoriteViewController.xib */; };
+		936904792D8B2A040036C375 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936904772D8B2A040036C375 /* SupportViewController.swift */; };
+		9369047A2D8B2A040036C375 /* SupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936904782D8B2A040036C375 /* SupportViewController.xib */; };
 		9379E8332D89609C00803956 /* PrivacyPolicy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8312D89609C00803956 /* PrivacyPolicy.pdf */; };
 		9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8322D89609C00803956 /* TermsOfUse.pdf */; };
 		9379E8362D8960D400803956 /* FilePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8352D8960D400803956 /* FilePdf.swift */; };
@@ -102,11 +112,21 @@
 		934033B22D76E83800D2BD86 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		934033B82D772D9500D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		934033B92D772D9500D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
 		9359A70E2D8703450046239D /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
 		9359A70F2D8703450046239D /* SetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPasswordViewController.xib; sourceTree = "<group>"; };
 		936152062D79EFB800596027 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		936152072D79EFB800596027 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
 		9361520A2D79F0E300596027 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		936904682D8B1B280036C375 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		9369046A2D8B1B350036C375 /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		9369046F2D8B29E40036C375 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		936904702D8B29E40036C375 /* ResourcesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourcesViewController.xib; sourceTree = "<group>"; };
+		936904732D8B29F50036C375 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		936904742D8B29F50036C375 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		936904772D8B2A040036C375 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		936904782D8B2A040036C375 /* SupportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportViewController.xib; sourceTree = "<group>"; };
 		9379E8312D89609C00803956 /* PrivacyPolicy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PrivacyPolicy.pdf; sourceTree = "<group>"; };
 		9379E8322D89609C00803956 /* TermsOfUse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TermsOfUse.pdf; sourceTree = "<group>"; };
 		9379E8352D8960D400803956 /* FilePdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePdf.swift; sourceTree = "<group>"; };
@@ -240,6 +260,7 @@
 		934033842D758C1E00D2BD86 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				934BDA002D8B1ADA00E03185 /* TabBarView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +278,7 @@
 		934033862D758C4700D2BD86 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				934BD9FB2D8B1A5500E03185 /* TabBarViewController */,
 				934033892D759D2200D2BD86 /* OnboardingViewController */,
 				934033882D759D0C00D2BD86 /* SplashViewController */,
 			);
@@ -266,6 +288,9 @@
 		934033872D758D1000D2BD86 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9369046E2D8B29C50036C375 /* SupportViewController */,
+				9369046D2D8B29BD0036C375 /* FavoriteViewController */,
+				9369046C2D8B29AB0036C375 /* ResourcesViewController */,
 				93E47FDE2D7B62A6008AF6E4 /* SetUpViewController */,
 				934033B72D772D7E00D2BD86 /* HomeViewController */,
 				934033912D75D95400D2BD86 /* AuthenticationViewController */,
@@ -374,6 +399,24 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
+		934BD9FB2D8B1A5500E03185 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */,
+				934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */,
+			);
+			path = TabBarViewController;
+			sourceTree = "<group>";
+		};
+		934BDA002D8B1ADA00E03185 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				936904682D8B1B280036C375 /* TabBarView.swift */,
+				9369046A2D8B1B350036C375 /* TabBarView.xib */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
 		936152052D79EF8600596027 /* ForgetPasswordViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +426,33 @@
 				9359A70F2D8703450046239D /* SetPasswordViewController.xib */,
 			);
 			path = ForgetPasswordViewController;
+			sourceTree = "<group>";
+		};
+		9369046C2D8B29AB0036C375 /* ResourcesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9369046F2D8B29E40036C375 /* ResourcesViewController.swift */,
+				936904702D8B29E40036C375 /* ResourcesViewController.xib */,
+			);
+			path = ResourcesViewController;
+			sourceTree = "<group>";
+		};
+		9369046D2D8B29BD0036C375 /* FavoriteViewController */ = {
+			isa = PBXGroup;
+			children = (
+				936904732D8B29F50036C375 /* FavoriteViewController.swift */,
+				936904742D8B29F50036C375 /* FavoriteViewController.xib */,
+			);
+			path = FavoriteViewController;
+			sourceTree = "<group>";
+		};
+		9369046E2D8B29C50036C375 /* SupportViewController */ = {
+			isa = PBXGroup;
+			children = (
+				936904772D8B2A040036C375 /* SupportViewController.swift */,
+				936904782D8B2A040036C375 /* SupportViewController.xib */,
+			);
+			path = SupportViewController;
 			sourceTree = "<group>";
 		};
 		9379E8302D89605B00803956 /* FilePdf */ = {
@@ -615,13 +685,16 @@
 			files = (
 				93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */,
 				93E47FF42D7C4161008AF6E4 /* WeightSelectionViewController.xib in Resources */,
+				9369046B2D8B1B350036C375 /* TabBarView.xib in Resources */,
 				93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */,
 				93E102872D837D9300B6011D /* PhysicalActivityViewController.xib in Resources */,
 				936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */,
 				93BEDBB32D7EE9340010EE10 /* HeightSelectionViewController.xib in Resources */,
 				934033772D758A1700D2BD86 /* Assets.xcassets in Resources */,
+				936904762D8B29F50036C375 /* FavoriteViewController.xib in Resources */,
 				93AEF7C42D8364F2006E3CBD /* GoalSelectionViewController.xib in Resources */,
 				9379E8332D89609C00803956 /* PrivacyPolicy.pdf in Resources */,
+				9369047A2D8B2A040036C375 /* SupportViewController.xib in Resources */,
 				9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */,
 				93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */,
 				9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */,
@@ -629,6 +702,7 @@
 				93AEF7C02D834EA3006E3CBD /* WeelCollectionViewCell.xib in Resources */,
 				93D234642D7F49700000E945 /* SelectNumberCollectionViewCell.xib in Resources */,
 				93AA48382D8433CC00301A3F /* Localizable.strings in Resources */,
+				934BD9FF2D8B1A9B00E03185 /* TabBarViewController.xib in Resources */,
 				93D2345C2D7F0AE60000E945 /* AgeCollectionViewCell.xib in Resources */,
 				93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */,
 				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
@@ -636,6 +710,7 @@
 				93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */,
 				93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */,
 				9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */,
+				936904722D8B29E40036C375 /* ResourcesViewController.xib in Resources */,
 				93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */,
 				934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */,
 				934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */,
@@ -693,6 +768,7 @@
 			files = (
 				9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */,
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
+				936904792D8B2A040036C375 /* SupportViewController.swift in Sources */,
 				9379E8362D8960D400803956 /* FilePdf.swift in Sources */,
 				93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
@@ -701,18 +777,22 @@
 				93E47FF32D7C4161008AF6E4 /* WeightSelectionViewController.swift in Sources */,
 				9361520B2D79F0E300596027 /* PushViewController.swift in Sources */,
 				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
+				936904692D8B1B280036C375 /* TabBarView.swift in Sources */,
 				934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */,
 				9379E83A2D8974CD00803956 /* UserModel.swift in Sources */,
 				934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */,
+				936904752D8B29F50036C375 /* FavoriteViewController.swift in Sources */,
 				93D234652D7F49700000E945 /* SelectNumberCollectionViewCell.swift in Sources */,
 				93E102862D837D9300B6011D /* PhysicalActivityViewController.swift in Sources */,
 				93D234692D7F49820000E945 /* NumberCollectionViewCell.swift in Sources */,
 				93E47FDD2D7B4EF3008AF6E4 /* RegistrationConditions.swift in Sources */,
 				93E47FE32D7B62CC008AF6E4 /* StartSetUpViewController.swift in Sources */,
+				934BD9FE2D8B1A9B00E03185 /* TabBarViewController.swift in Sources */,
 				930F27AB2D7849AA0085D429 /* UIAlert+Extension.swift in Sources */,
 				93D2345D2D7F0AE60000E945 /* AgeCollectionViewCell.swift in Sources */,
 				93BEDBB22D7EE9340010EE10 /* HeightSelectionViewController.swift in Sources */,
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
+				936904712D8B29E40036C375 /* ResourcesViewController.swift in Sources */,
 				93AEF7C52D8364F2006E3CBD /* GoalSelectionViewController.swift in Sources */,
 				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
 				93AEF7C12D834EA3006E3CBD /* WeelCollectionViewCell.swift in Sources */,
