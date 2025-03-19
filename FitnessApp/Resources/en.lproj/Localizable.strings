@@ -86,7 +86,7 @@
 "set_password" = "Set Password";
 "finish" = "Finish";
 
-
+"password_reset_sent" = "The password reset link has been sent to your email.";
 
 
 

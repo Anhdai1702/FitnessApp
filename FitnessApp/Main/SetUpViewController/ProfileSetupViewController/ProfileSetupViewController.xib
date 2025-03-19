@@ -17,7 +17,7 @@
                 <outlet property="emailLabel" destination="Rgu-y5-qlp" id="tv6-Kl-t1s"/>
                 <outlet property="emailTextField" destination="D7O-ny-gAE" id="iM8-o7-adh"/>
                 <outlet property="fullNameLabel" destination="CNJ-Yz-D2w" id="OiB-l2-4Ha"/>
-                <outlet property="fullNameTextField" destination="Zh4-bd-WNY" id="Ibo-6B-4FM"/>
+                <outlet property="fullNameTextField" destination="Zh4-bd-WNY" id="9AT-VQ-Ka3"/>
                 <outlet property="imageProfile" destination="aVB-3U-gze" id="i7i-i8-vZe"/>
                 <outlet property="mobileNumberLabel" destination="Dhb-Ie-Urp" id="5oV-9x-ipo"/>
                 <outlet property="mobileNumberTextField" destination="xXc-19-SXK" id="M2J-Q4-vjt"/>
@@ -129,6 +129,7 @@
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zh4-bd-WNY">
                                                     <rect key="frame" x="0.0" y="0.0" width="333" height="45"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>

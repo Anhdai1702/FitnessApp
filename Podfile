@@ -9,5 +9,6 @@ target 'FitnessApp' do
   pod 'GoogleSignIn'
   pod 'lottie-ios'
   pod 'FBSDKLoginKit'
+  pod 'RealmSwift'
   
 end

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class ProfileSetupViewController: UIViewController {
     
@@ -25,10 +27,28 @@ class ProfileSetupViewController: UIViewController {
     @IBOutlet private weak var imageProfile: UIImageView!
     @IBOutlet private weak var startBtn: UIButton!
     
+    private var userListener: ListenerRegistration?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+//        NotificationCenter.default.addObserver(self, selector: #selector(fetchUserData), name: NSNotification.Name("UserDataUpdated"), object: nil)
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self) // Xóa lắng nghe khi ViewController bị huỷ
+    }
+
+    
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+//           fetchUserData()
+       }
+
+       override func viewWillDisappear(_ animated: Bool) {
+           super.viewWillDisappear(animated)
+           userListener?.remove() // Dừng lắng nghe khi rời khỏi màn hình
+       }
 }
 
 // MARK: - Actions
@@ -52,6 +72,7 @@ extension ProfileSetupViewController {
     private func setupUI() {
         setupLocalized()
         setupDismissKeyboard()
+        fetchUserData()
     }
     
     private func setupLocalized() {
@@ -73,4 +94,21 @@ extension ProfileSetupViewController {
     @objc private func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    @objc private func fetchUserData() {
+        UserService.shared.fetchUserData { [weak self] data in
+            guard let self = self, let data = data else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                self.fullNameTextField.text = data["fullName"] as? String ?? ""
+                self.emailTextField.text = data["emailAndNumber"] as? String ?? ""
+                self.nickNameTextField.text = data["nickName"] as? String ?? ""
+                self.mobileNumberTextField.text = data["mobileNumber"] as? String ?? ""
+            }
+        }
+    }
+
+
 }

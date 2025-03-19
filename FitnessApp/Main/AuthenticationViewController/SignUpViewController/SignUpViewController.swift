@@ -11,7 +11,7 @@ import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
 import LocalAuthentication
-import PDFKit
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
     
@@ -31,7 +31,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet private weak var confirmPasswordTextField: UITextField!
     
     @IBOutlet private weak var signUpBtn: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -86,7 +86,7 @@ extension SignUpViewController {
         passwordLabel.text = "password".localized()
         confirmPasswordLabel.text = "confirm_password".localized()
         loginLabel.text = "login_prompt".localized()
-        // add placeholder 
+        // add placeholder
         fullNameTextField.placeholder = "full_name".localized()
         emailAndNumberTextField.placeholder = "email_or_phone".localized()
         passwordTextField.placeholder = "enter_password".localized()
@@ -177,7 +177,7 @@ extension SignUpViewController {
         
         if (text as NSString).range(of: "terms_of_use".localized()).contains(index) {
             PDFManager.shared.openPDF(at: "TermsOfUse", from: self)
-
+            
         } else if (text as NSString).range(of: "privacy_policy".localized()).contains(index) {
             PDFManager.shared.openPDF(at: "PrivacyPolicy", from: self)
         }
@@ -208,8 +208,19 @@ extension SignUpViewController {
             showAlert(title: "error".localized(), mess: "password_not_match".localized())
             return
         }
-        Auth.auth().createUser(withEmail: emailAndNumberTextField.text!, password: passwordTextField.text!) { result, error in
-            self.hidesBottomBarWhenPushed = false
+        
+        Auth.auth().createUser(withEmail: emailAndNumber, password: password) { result, error in
+            guard let user = result?.user else {
+                return
+            }
+            // update displayName
+            let changeRequest = user.createProfileChangeRequest()
+            changeRequest.displayName = fullName
+            changeRequest.commitChanges { error in
+                if let error = error {
+                }
+            }
+            self.saveUserToFirestore(fullName: fullName, emailAndNumber: emailAndNumber, userId: user.uid)
             self.showAlert(title: "congratulations".localized(), mess: "sign_up_successfully".localized())
         }
     }
@@ -218,11 +229,24 @@ extension SignUpViewController {
     private func sginUpGoogle() {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
             guard let result = signInResult else { return }
+            
             let user = result.user
-            let id = user.userID
-            let name = user.profile?.name
-            let email = user.profile?.email
-            self.push(viewControllerType: HomeViewController.self)
+            let idToken = user.idToken?.tokenString  // Token Google
+            let accessToken = user.accessToken.tokenString
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken ?? "", accessToken: accessToken)
+            
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    return
+                }
+                
+                guard let userId = authResult?.user.uid else { return }
+                let fullName = user.profile?.name ?? "No Name"
+                let email = user.profile?.email ?? "No Email"
+                self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
+                self.push(viewControllerType: HomeViewController.self)
+            }
         }
     }
     
@@ -238,8 +262,6 @@ extension SignUpViewController {
         LoginManager().logIn(permissions: ["public_profile", "email"], from: self) { result, error in
             if let error = error {
                 self.showAlert(title: "error".localized(), mess: "\(error.localizedDescription)")
-            } else {
-                print("next viewController")
             }
         }
     }
@@ -260,6 +282,23 @@ extension SignUpViewController {
                         self.self .showAlert(title: "error".localized(), mess: "\(String(describing: error?.localizedDescription))")
                     }
                 }
+            }
+        }
+    }
+    
+    // save information in FirebaseFirestore
+    func saveUserToFirestore(fullName: String, emailAndNumber: String, userId: String) {
+        let db = Firestore.firestore()
+        let userRef = db.collection("users").document(userId)
+        
+        let userData: [String: Any] = [
+            "fullName": fullName,
+            "emailAndNumber": emailAndNumber,
+            "createdAt": Timestamp(date: Date())
+        ]
+        
+        userRef.setData(userData) { error in
+            if let error = error {
             }
         }
     }
