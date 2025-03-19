@@ -17,7 +17,7 @@
                 <outlet property="emailAndMobileLabel" destination="dSF-M7-lOx" id="K7G-oG-YYB"/>
                 <outlet property="emailAndNumberTextField" destination="3Kt-xX-CWb" id="QSc-XQ-l6h"/>
                 <outlet property="fullNameLabel" destination="f8Y-g5-c7p" id="t2C-wG-zYx"/>
-                <outlet property="fullNameTextField" destination="1ZO-ir-g6G" id="KoQ-Dj-i9l"/>
+                <outlet property="fullNameTextField" destination="1ZO-ir-g6G" id="OdN-nl-cS7"/>
                 <outlet property="loginLabel" destination="tGP-Tj-YNs" id="fER-3e-hTD"/>
                 <outlet property="orSignUpLabel" destination="F9k-qc-tIh" id="bXS-Me-dfu"/>
                 <outlet property="passwordLabel" destination="Qcd-GH-E6L" id="uY5-Yu-DId"/>

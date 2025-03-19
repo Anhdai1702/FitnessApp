@@ -87,3 +87,4 @@
 "set_password" = "Đặt lại mật khẩu";
 "finish" = "Hoàn thành";
 
+"password_reset_sent" = "Liên kết đặt lại mật khẩu đã được gửi tới email của bạn.";

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ForgetPasswordViewController: UIViewController {
     
@@ -35,7 +36,7 @@ extension ForgetPasswordViewController {
     }
     
     @IBAction func didTapNext(_ sender: Any) {
-        push(viewControllerType: SetPasswordViewController.self)
+        resetPassword()
     }
     
 }
@@ -64,5 +65,21 @@ extension ForgetPasswordViewController {
     
     @objc private func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    func resetPassword() {
+        guard let email = emailTextField.text else { return }
+        if email.isEmpty {
+            showAlert(title: "error".localized(), mess: "all_fields_required".localized())
+            return
+        }
+        
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                self.showAlert(title: "error".localized(), mess: error.localizedDescription)
+            } else {
+                self.showAlert(title: "successfully".localized(), mess: "password_reset_sent".localized())
+            }
+        }
     }
 }
