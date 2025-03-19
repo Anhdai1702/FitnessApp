@@ -32,13 +32,7 @@ class ProfileSetupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-//        NotificationCenter.default.addObserver(self, selector: #selector(fetchUserData), name: NSNotification.Name("UserDataUpdated"), object: nil)
     }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self) // Xóa lắng nghe khi ViewController bị huỷ
-    }
-
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
