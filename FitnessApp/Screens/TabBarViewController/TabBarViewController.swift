@@ -7,63 +7,51 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class TabBarViewController: UITabBarController {
     
-    @IBOutlet weak var homeView: UIView!
-    @IBOutlet weak var tabBarView: TabBarView!
-    
-    private var homeViewController: HomeViewController!
-    private var resourcesViewController: ResourcesViewController!
-    private var favoriteViewController: FavoriteViewController!
-    private var supportViewController: SupportViewController!
+    private let customTabBarView = TabBarView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupViewControllers()
+        setupCustomTabBar()
     }
 }
 
-// MARK: - Custom UI
+// MARK: - Setup UI
 extension TabBarViewController {
     
-    private func setupView(){
-        tabBarView.delegate = self
-        homeViewController = HomeViewController()
-        resourcesViewController = ResourcesViewController()
-        favoriteViewController = FavoriteViewController()
-        supportViewController = SupportViewController()
-        switchToViewController(homeViewController)
+    private func setupViewControllers() {
+        let viewControllersList: [UIViewController] = [
+            HomeViewController(),
+            ResourcesViewController(),
+            FavoriteViewController(),
+            SupportViewController()
+        ].map { UINavigationController(rootViewController: $0) }
+        
+        viewControllers = viewControllersList
+        selectedIndex = 0
     }
     
-    private func switchToViewController(_ viewController: UIViewController) {
-        for child in children {
-            child.view.removeFromSuperview()
-            child.removeFromParent()
-        }
-        addChild(viewController)
-        homeView.addSubview(viewController.view)
-        viewController.view.frame = homeView.bounds
-        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        viewController.didMove(toParent: self)
+    private func setupCustomTabBar() {
+        tabBar.isHidden = true
+        
+        customTabBarView.delegate = self
+        view.addSubview(customTabBarView)
+        
+        customTabBarView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            customTabBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            customTabBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            customTabBarView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            customTabBarView.heightAnchor.constraint(equalToConstant: 70)
+        ])
     }
 }
 
-// MARK: - TabBarDelegate
+// MARK: - TabBar Delegate
 extension TabBarViewController: TabBarViewDelegate {
-    
-    func didTapHome() {
-        switchToViewController(homeViewController)
-    }
-    
-    func didTapResources() {
-        switchToViewController(resourcesViewController)
-    }
-    
-    func didTapFavorite() {
-        switchToViewController(favoriteViewController)
-    }
-    
-    func didTapSupport() {
-        switchToViewController(supportViewController)
+    func didSelectTab(at index: Int) {
+        selectedIndex = index
     }
 }

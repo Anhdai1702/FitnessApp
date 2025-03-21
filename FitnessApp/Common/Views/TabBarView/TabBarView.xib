@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="8di-t9-Rqd">
-                    <rect key="frame" x="101" y="84.666666666666671" width="323" height="31"/>
+                    <rect key="frame" x="101" y="74" width="323" height="31"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0C-ss-ksz">
                             <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
@@ -34,7 +34,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <connections>
-                                        <action selector="didTapHome:" destination="-1" eventType="touchUpInside" id="ab4-vc-eA7"/>
+                                        <action selector="didTapTab:" destination="-1" eventType="touchUpInside" id="zAM-f5-pTW"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -58,11 +58,11 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="document_off" translatesAutoresizingMaskIntoConstraints="NO" id="H87-co-dvc">
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7E-bO-2On">
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7E-bO-2On">
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <connections>
-                                        <action selector="didTapDocument:" destination="-1" eventType="touchUpInside" id="kvM-gQ-WOM"/>
+                                        <action selector="didTapTab:" destination="-1" eventType="touchUpInside" id="0Sm-M1-MXV"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -86,11 +86,11 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_off" translatesAutoresizingMaskIntoConstraints="NO" id="uqX-7x-UNL">
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-rF-7Wh">
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-rF-7Wh">
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <connections>
-                                        <action selector="didTapStar:" destination="-1" eventType="touchUpInside" id="O75-nU-PSn"/>
+                                        <action selector="didTapTab:" destination="-1" eventType="touchUpInside" id="1cw-P1-GPN"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -111,11 +111,11 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Md5-ph-XCJ">
                             <rect key="frame" x="291" y="0.0" width="32" height="31"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-pi-EQQ">
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uza-pi-EQQ">
                                     <rect key="frame" x="0.0" y="0.0" width="32" height="31"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <connections>
-                                        <action selector="didTapSupport:" destination="-1" eventType="touchUpInside" id="yXm-gf-bd3"/>
+                                        <action selector="didTapTab:" destination="-1" eventType="touchUpInside" id="jIt-dm-w38"/>
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="support_off" translatesAutoresizingMaskIntoConstraints="NO" id="dCt-lP-Ijr">
@@ -142,7 +142,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.70196078429999997" green="0.62745098040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="8di-t9-Rqd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sLL-29-P5U"/>
+                <constraint firstItem="8di-t9-Rqd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="TSl-bZ-CSr"/>
                 <constraint firstItem="8di-t9-Rqd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="z68-4W-qgZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

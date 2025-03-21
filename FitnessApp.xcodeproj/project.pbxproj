@@ -29,7 +29,12 @@
 		934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B82D772D9500D2BD86 /* HomeViewController.swift */; };
 		934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033B92D772D9500D2BD86 /* HomeViewController.xib */; };
 		934BD9FE2D8B1A9B00E03185 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */; };
-		934BD9FF2D8B1A9B00E03185 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */; };
+		9357C55E2D8C802200BC50ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357C55C2D8C802200BC50ED /* ProfileViewController.swift */; };
+		9357C55F2D8C802200BC50ED /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9357C55D2D8C802200BC50ED /* ProfileViewController.xib */; };
+		9357C5632D8C805300BC50ED /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9357C5622D8C805300BC50ED /* FavoritesViewController.xib */; };
+		9357C5642D8C805300BC50ED /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357C5612D8C805300BC50ED /* FavoritesViewController.swift */; };
+		9357C5682D8C806B00BC50ED /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9357C5672D8C806B00BC50ED /* SettingViewController.xib */; };
+		9357C5692D8C806B00BC50ED /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357C5662D8C806B00BC50ED /* SettingViewController.swift */; };
 		9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359A70E2D8703450046239D /* SetPasswordViewController.swift */; };
 		9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9359A70F2D8703450046239D /* SetPasswordViewController.xib */; };
 		936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936152072D79EFB800596027 /* ForgetPasswordViewController.xib */; };
@@ -46,11 +51,24 @@
 		9379E8332D89609C00803956 /* PrivacyPolicy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8312D89609C00803956 /* PrivacyPolicy.pdf */; };
 		9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9379E8322D89609C00803956 /* TermsOfUse.pdf */; };
 		9379E8362D8960D400803956 /* FilePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8352D8960D400803956 /* FilePdf.swift */; };
-		9379E83A2D8974CD00803956 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8392D8974CD00803956 /* UserModel.swift */; };
+		9379E83A2D8974CD00803956 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8392D8974CD00803956 /* UserProfileModel.swift */; };
 		9379E83C2D89C5FB00803956 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E83B2D89C5FB00803956 /* UserService.swift */; };
 		93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93A44B592D77691000F01324 /* GoogleService-Info.plist */; };
 		93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AA480A2D84224800301A3F /* LoginViewController.xib */; };
 		93AA48382D8433CC00301A3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AA48362D8433CC00301A3F /* Localizable.strings */; };
+		93ADCE242D8BFCC6005290AD /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE232D8BFCC6005290AD /* APIService.swift */; };
+		93ADCE2B2D8C3B08005290AD /* WorkoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE2A2D8C3B08005290AD /* WorkoutViewController.xib */; };
+		93ADCE2C2D8C3B08005290AD /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE292D8C3B08005290AD /* WorkoutViewController.swift */; };
+		93ADCE2F2D8C3B19005290AD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE2D2D8C3B19005290AD /* ProgressViewController.swift */; };
+		93ADCE302D8C3B19005290AD /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE2E2D8C3B19005290AD /* ProgressViewController.xib */; };
+		93ADCE332D8C3B2E005290AD /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE312D8C3B2E005290AD /* NutritionViewController.swift */; };
+		93ADCE342D8C3B2E005290AD /* NutritionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE322D8C3B2E005290AD /* NutritionViewController.xib */; };
+		93ADCE372D8C3B40005290AD /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE362D8C3B40005290AD /* CommunityViewController.xib */; };
+		93ADCE382D8C3B40005290AD /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE352D8C3B40005290AD /* CommunityViewController.swift */; };
+		93ADCE3E2D8C41F6005290AD /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE3D2D8C41F6005290AD /* UserProfileViewController.xib */; };
+		93ADCE3F2D8C41F6005290AD /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE3C2D8C41F6005290AD /* UserProfileViewController.swift */; };
+		93ADCE422D8C420A005290AD /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ADCE412D8C420A005290AD /* NotificationsViewController.xib */; };
+		93ADCE432D8C420A005290AD /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ADCE402D8C420A005290AD /* NotificationsViewController.swift */; };
 		93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF7BB2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib */; };
 		93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF7BA2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift */; };
 		93AEF7C02D834EA3006E3CBD /* WeelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93AEF7BF2D834EA3006E3CBD /* WeelCollectionViewCell.xib */; };
@@ -78,6 +96,8 @@
 		93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E47FFC2D7C4235008AF6E4 /* AgeSelectionViewController.xib */; };
 		93E480022D7C4250008AF6E4 /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E480002D7C4250008AF6E4 /* ProfileSetupViewController.swift */; };
 		93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */; };
+		93EB51572D8C68C80074331C /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EB51552D8C68C80074331C /* UserTableViewCell.swift */; };
+		93EB51582D8C68C80074331C /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93EB51562D8C68C80074331C /* UserTableViewCell.xib */; };
 		93EED49D2D787EC000E55018 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49C2D787EC000E55018 /* FirebaseAnalytics */; };
 		93EED49F2D787EC000E55018 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED49E2D787EC000E55018 /* FirebaseAuth */; };
 		93EED4A12D787EC000E55018 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A02D787EC000E55018 /* FirebaseCore */; };
@@ -113,7 +133,12 @@
 		934033B82D772D9500D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		934033B92D772D9500D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		9357C55C2D8C802200BC50ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9357C55D2D8C802200BC50ED /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9357C5612D8C805300BC50ED /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		9357C5622D8C805300BC50ED /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		9357C5662D8C806B00BC50ED /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9357C5672D8C806B00BC50ED /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		9359A70E2D8703450046239D /* SetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
 		9359A70F2D8703450046239D /* SetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetPasswordViewController.xib; sourceTree = "<group>"; };
 		936152062D79EFB800596027 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
@@ -130,13 +155,26 @@
 		9379E8312D89609C00803956 /* PrivacyPolicy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PrivacyPolicy.pdf; sourceTree = "<group>"; };
 		9379E8322D89609C00803956 /* TermsOfUse.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TermsOfUse.pdf; sourceTree = "<group>"; };
 		9379E8352D8960D400803956 /* FilePdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePdf.swift; sourceTree = "<group>"; };
-		9379E8392D8974CD00803956 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9379E8392D8974CD00803956 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		9379E83B2D89C5FB00803956 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		93A44B592D77691000F01324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93AA480A2D84224800301A3F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		93AA48282D842B2800301A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AA48372D8433CC00301A3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		93AA48392D8433DB00301A3F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93ADCE232D8BFCC6005290AD /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		93ADCE292D8C3B08005290AD /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		93ADCE2A2D8C3B08005290AD /* WorkoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutViewController.xib; sourceTree = "<group>"; };
+		93ADCE2D2D8C3B19005290AD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		93ADCE2E2D8C3B19005290AD /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		93ADCE312D8C3B2E005290AD /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
+		93ADCE322D8C3B2E005290AD /* NutritionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NutritionViewController.xib; sourceTree = "<group>"; };
+		93ADCE352D8C3B40005290AD /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		93ADCE362D8C3B40005290AD /* CommunityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
+		93ADCE3C2D8C41F6005290AD /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		93ADCE3D2D8C41F6005290AD /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		93ADCE402D8C420A005290AD /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		93ADCE412D8C420A005290AD /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		93AEF7BA2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHeightCollectionViewCell.swift; sourceTree = "<group>"; };
 		93AEF7BB2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectHeightCollectionViewCell.xib; sourceTree = "<group>"; };
 		93AEF7BE2D834EA3006E3CBD /* WeelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeelCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +202,8 @@
 		93E47FFC2D7C4235008AF6E4 /* AgeSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeSelectionViewController.xib; sourceTree = "<group>"; };
 		93E480002D7C4250008AF6E4 /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSetupViewController.xib; sourceTree = "<group>"; };
+		93EB51552D8C68C80074331C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		93EB51562D8C68C80074331C /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				934033A52D761EC800D2BD86 /* OnboardingModel.swift */,
-				9379E8392D8974CD00803956 /* UserModel.swift */,
+				9379E8392D8974CD00803956 /* UserProfileModel.swift */,
 				9379E83B2D89C5FB00803956 /* UserService.swift */,
 			);
 			path = Model;
@@ -268,6 +308,7 @@
 		934033852D758C2200D2BD86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				93ADCE222D8BFC91005290AD /* APIService */,
 				9379E8302D89605B00803956 /* FilePdf */,
 				934033A72D76E49A00D2BD86 /* Cells */,
 				9340338E2D75B8CC00D2BD86 /* Storage */,
@@ -278,6 +319,7 @@
 		934033862D758C4700D2BD86 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				93E47FDE2D7B62A6008AF6E4 /* SetUpViewController */,
 				934BD9FB2D8B1A5500E03185 /* TabBarViewController */,
 				934033892D759D2200D2BD86 /* OnboardingViewController */,
 				934033882D759D0C00D2BD86 /* SplashViewController */,
@@ -288,10 +330,14 @@
 		934033872D758D1000D2BD86 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9357C5652D8C805A00BC50ED /* SettingViewController */,
+				9357C5602D8C802700BC50ED /* FavoritesViewController */,
+				9357C55B2D8C800800BC50ED /* ProfileViewController */,
+				93ADCE3A2D8C41B3005290AD /* NotificationsViewController */,
+				93ADCE392D8C40FB005290AD /* UserProfileViewController */,
 				9369046E2D8B29C50036C375 /* SupportViewController */,
 				9369046D2D8B29BD0036C375 /* FavoriteViewController */,
 				9369046C2D8B29AB0036C375 /* ResourcesViewController */,
-				93E47FDE2D7B62A6008AF6E4 /* SetUpViewController */,
 				934033B72D772D7E00D2BD86 /* HomeViewController */,
 				934033912D75D95400D2BD86 /* AuthenticationViewController */,
 			);
@@ -393,6 +439,10 @@
 		934033B72D772D7E00D2BD86 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				93ADCE282D8C3ADC005290AD /* CommunityViewController */,
+				93ADCE272D8C3ACC005290AD /* NutritionViewController */,
+				93ADCE262D8C3ABA005290AD /* ProgressViewController */,
+				93ADCE252D8C3AA7005290AD /* WorkoutViewController */,
 				934033B82D772D9500D2BD86 /* HomeViewController.swift */,
 				934033B92D772D9500D2BD86 /* HomeViewController.xib */,
 			);
@@ -403,7 +453,6 @@
 			isa = PBXGroup;
 			children = (
 				934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */,
-				934BD9FD2D8B1A9B00E03185 /* TabBarViewController.xib */,
 			);
 			path = TabBarViewController;
 			sourceTree = "<group>";
@@ -415,6 +464,33 @@
 				9369046A2D8B1B350036C375 /* TabBarView.xib */,
 			);
 			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		9357C55B2D8C800800BC50ED /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9357C55C2D8C802200BC50ED /* ProfileViewController.swift */,
+				9357C55D2D8C802200BC50ED /* ProfileViewController.xib */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		9357C5602D8C802700BC50ED /* FavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9357C5612D8C805300BC50ED /* FavoritesViewController.swift */,
+				9357C5622D8C805300BC50ED /* FavoritesViewController.xib */,
+			);
+			path = FavoritesViewController;
+			sourceTree = "<group>";
+		};
+		9357C5652D8C805A00BC50ED /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9357C5662D8C806B00BC50ED /* SettingViewController.swift */,
+				9357C5672D8C806B00BC50ED /* SettingViewController.xib */,
+			);
+			path = SettingViewController;
 			sourceTree = "<group>";
 		};
 		936152052D79EF8600596027 /* ForgetPasswordViewController */ = {
@@ -463,6 +539,69 @@
 				9379E8352D8960D400803956 /* FilePdf.swift */,
 			);
 			path = FilePdf;
+			sourceTree = "<group>";
+		};
+		93ADCE222D8BFC91005290AD /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE232D8BFCC6005290AD /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		93ADCE252D8C3AA7005290AD /* WorkoutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE292D8C3B08005290AD /* WorkoutViewController.swift */,
+				93ADCE2A2D8C3B08005290AD /* WorkoutViewController.xib */,
+			);
+			path = WorkoutViewController;
+			sourceTree = "<group>";
+		};
+		93ADCE262D8C3ABA005290AD /* ProgressViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE2D2D8C3B19005290AD /* ProgressViewController.swift */,
+				93ADCE2E2D8C3B19005290AD /* ProgressViewController.xib */,
+			);
+			path = ProgressViewController;
+			sourceTree = "<group>";
+		};
+		93ADCE272D8C3ACC005290AD /* NutritionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE312D8C3B2E005290AD /* NutritionViewController.swift */,
+				93ADCE322D8C3B2E005290AD /* NutritionViewController.xib */,
+			);
+			path = NutritionViewController;
+			sourceTree = "<group>";
+		};
+		93ADCE282D8C3ADC005290AD /* CommunityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE352D8C3B40005290AD /* CommunityViewController.swift */,
+				93ADCE362D8C3B40005290AD /* CommunityViewController.xib */,
+			);
+			path = CommunityViewController;
+			sourceTree = "<group>";
+		};
+		93ADCE392D8C40FB005290AD /* UserProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93EB51542D8C689E0074331C /* UserTableViewCell */,
+				93ADCE3C2D8C41F6005290AD /* UserProfileViewController.swift */,
+				93ADCE3D2D8C41F6005290AD /* UserProfileViewController.xib */,
+			);
+			path = UserProfileViewController;
+			sourceTree = "<group>";
+		};
+		93ADCE3A2D8C41B3005290AD /* NotificationsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				93ADCE402D8C420A005290AD /* NotificationsViewController.swift */,
+				93ADCE412D8C420A005290AD /* NotificationsViewController.xib */,
+			);
+			path = NotificationsViewController;
 			sourceTree = "<group>";
 		};
 		93AEF7B82D834E78006E3CBD /* SelectHeightCell */ = {
@@ -610,6 +749,15 @@
 			path = ProfileSetupViewController;
 			sourceTree = "<group>";
 		};
+		93EB51542D8C689E0074331C /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				93EB51552D8C68C80074331C /* UserTableViewCell.swift */,
+				93EB51562D8C68C80074331C /* UserTableViewCell.xib */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
 		B43D4F4B98CECE62C860ED1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,9 +832,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */,
+				9357C5682D8C806B00BC50ED /* SettingViewController.xib in Resources */,
 				93E47FF42D7C4161008AF6E4 /* WeightSelectionViewController.xib in Resources */,
 				9369046B2D8B1B350036C375 /* TabBarView.xib in Resources */,
+				9357C55F2D8C802200BC50ED /* ProfileViewController.xib in Resources */,
 				93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */,
+				93ADCE2B2D8C3B08005290AD /* WorkoutViewController.xib in Resources */,
+				93ADCE342D8C3B2E005290AD /* NutritionViewController.xib in Resources */,
 				93E102872D837D9300B6011D /* PhysicalActivityViewController.xib in Resources */,
 				936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */,
 				93BEDBB32D7EE9340010EE10 /* HeightSelectionViewController.xib in Resources */,
@@ -697,12 +849,13 @@
 				9369047A2D8B2A040036C375 /* SupportViewController.xib in Resources */,
 				9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */,
 				93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */,
+				93EB51582D8C68C80074331C /* UserTableViewCell.xib in Resources */,
 				9340339F2D75D9CD00D2BD86 /* OnboardingViewController.xib in Resources */,
 				93D234682D7F49820000E945 /* NumberCollectionViewCell.xib in Resources */,
 				93AEF7C02D834EA3006E3CBD /* WeelCollectionViewCell.xib in Resources */,
 				93D234642D7F49700000E945 /* SelectNumberCollectionViewCell.xib in Resources */,
+				93ADCE372D8C3B40005290AD /* CommunityViewController.xib in Resources */,
 				93AA48382D8433CC00301A3F /* Localizable.strings in Resources */,
-				934BD9FF2D8B1A9B00E03185 /* TabBarViewController.xib in Resources */,
 				93D2345C2D7F0AE60000E945 /* AgeCollectionViewCell.xib in Resources */,
 				93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */,
 				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
@@ -711,8 +864,12 @@
 				93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */,
 				9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */,
 				936904722D8B29E40036C375 /* ResourcesViewController.xib in Resources */,
+				93ADCE302D8C3B19005290AD /* ProgressViewController.xib in Resources */,
 				93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */,
+				93ADCE3E2D8C41F6005290AD /* UserProfileViewController.xib in Resources */,
 				934033AC2D76E4E100D2BD86 /* MoveCollectionViewCell.xib in Resources */,
+				93ADCE422D8C420A005290AD /* NotificationsViewController.xib in Resources */,
+				9357C5632D8C805300BC50ED /* FavoritesViewController.xib in Resources */,
 				934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,19 +926,27 @@
 				9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */,
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
 				936904792D8B2A040036C375 /* SupportViewController.swift in Sources */,
+				93ADCE2F2D8C3B19005290AD /* ProgressViewController.swift in Sources */,
 				9379E8362D8960D400803956 /* FilePdf.swift in Sources */,
 				93E47FE92D7C40A8008AF6E4 /* GenderViewController.swift in Sources */,
+				9357C55E2D8C802200BC50ED /* ProfileViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
+				93ADCE242D8BFCC6005290AD /* APIService.swift in Sources */,
+				93ADCE332D8C3B2E005290AD /* NutritionViewController.swift in Sources */,
 				93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */,
 				9379E83C2D89C5FB00803956 /* UserService.swift in Sources */,
 				93E47FF32D7C4161008AF6E4 /* WeightSelectionViewController.swift in Sources */,
 				9361520B2D79F0E300596027 /* PushViewController.swift in Sources */,
 				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
 				936904692D8B1B280036C375 /* TabBarView.swift in Sources */,
+				93ADCE2C2D8C3B08005290AD /* WorkoutViewController.swift in Sources */,
+				93ADCE3F2D8C41F6005290AD /* UserProfileViewController.swift in Sources */,
+				93ADCE432D8C420A005290AD /* NotificationsViewController.swift in Sources */,
 				934033AB2D76E4E100D2BD86 /* MoveCollectionViewCell.swift in Sources */,
-				9379E83A2D8974CD00803956 /* UserModel.swift in Sources */,
+				9379E83A2D8974CD00803956 /* UserProfileModel.swift in Sources */,
 				934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */,
 				936904752D8B29F50036C375 /* FavoriteViewController.swift in Sources */,
+				93ADCE382D8C3B40005290AD /* CommunityViewController.swift in Sources */,
 				93D234652D7F49700000E945 /* SelectNumberCollectionViewCell.swift in Sources */,
 				93E102862D837D9300B6011D /* PhysicalActivityViewController.swift in Sources */,
 				93D234692D7F49820000E945 /* NumberCollectionViewCell.swift in Sources */,
@@ -789,9 +954,11 @@
 				93E47FE32D7B62CC008AF6E4 /* StartSetUpViewController.swift in Sources */,
 				934BD9FE2D8B1A9B00E03185 /* TabBarViewController.swift in Sources */,
 				930F27AB2D7849AA0085D429 /* UIAlert+Extension.swift in Sources */,
+				93EB51572D8C68C80074331C /* UserTableViewCell.swift in Sources */,
 				93D2345D2D7F0AE60000E945 /* AgeCollectionViewCell.swift in Sources */,
 				93BEDBB22D7EE9340010EE10 /* HeightSelectionViewController.swift in Sources */,
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
+				9357C5692D8C806B00BC50ED /* SettingViewController.swift in Sources */,
 				936904712D8B29E40036C375 /* ResourcesViewController.swift in Sources */,
 				93AEF7C52D8364F2006E3CBD /* GoalSelectionViewController.swift in Sources */,
 				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
@@ -801,6 +968,7 @@
 				9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */,
 				934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */,
 				934033A62D761EC800D2BD86 /* OnboardingModel.swift in Sources */,
+				9357C5642D8C805300BC50ED /* FavoritesViewController.swift in Sources */,
 				934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */,
 				934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */,
 				936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */,

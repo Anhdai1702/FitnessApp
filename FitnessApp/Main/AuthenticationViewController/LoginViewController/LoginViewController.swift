@@ -142,7 +142,7 @@ extension LoginViewController {
             let userId = user.uid
             let fullName = user.displayName ?? "Unknown"
             self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-            self.push(viewControllerType: ProfileSetupViewController.self)
+            self.push(viewControllerType: TabBarViewController.self)
         }
     }
 
@@ -164,7 +164,7 @@ extension LoginViewController {
                 let email = user.profile?.email ?? "No Email"
                 // save in Firestore
                 self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-                self.push(viewControllerType: ProfileSetupViewController.self)
+                self.push(viewControllerType: TabBarViewController.self)
             }
         }
     }
@@ -200,7 +200,7 @@ extension LoginViewController {
                     let email = authResult?.user.email ?? "No Email"
                     // save in Firestore
                     self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-                    self.push(viewControllerType: ProfileSetupViewController.self)
+                    self.push(viewControllerType: TabBarViewController.self)
                 }
             }
         }

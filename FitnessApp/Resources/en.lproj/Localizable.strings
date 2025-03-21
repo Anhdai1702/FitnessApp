@@ -88,6 +88,30 @@
 
 "password_reset_sent" = "The password reset link has been sent to your email.";
 
+"your_name" = "Your Name";
+"detail_home" = "It's time to challenge your limits";
+"workout" = "Workout";
+"progress_tracking" = "Progress Tracking";
+"nutrition" = "Nutrition";
+"community" = "Community";
+"recommendations" = "Recommendations";
+"see_all" = "See All";
+"squat" = "Squat";
+"full_body_stretching" = "Full Body Stretching";
+"practice_time" = "Practice Time";
+"calories" = "Calories";
+"full_body" = "Full Body";
+"weekly_challenge" = "Weekly Challenge";
+"plank_with_hip_twist" = "Plank with Hip Twist";
+"articles_and_tips" = "Articles & Tips";
+"supplement_guide" = "Supplement Guide";
+"quick_and_effective_daily_routines" = "Quick & Effective Daily Routines";
+
+"my_profile" = "My Profile";
+"weight" = "Weight";
+"age" = "Age";
+"height" = "Height";
+
 
 
 
