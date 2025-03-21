@@ -17,14 +17,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc = TabBarViewController()
-        let navi = UINavigationController(rootViewController: vc)
-        
-        window.rootViewController = navi
-        
+        let tabBarController = TabBarViewController()
+
+        window.rootViewController = tabBarController
         self.window = window
         window.makeKeyAndVisible()
     }
+
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         guard let url = URLContexts.first?.url else {

@@ -51,7 +51,7 @@ class SplashViewController: UIViewController {
     }
     
     func homeViewController(){
-        let dashBoardViewcontroller = HomeViewController ()
+        let dashBoardViewcontroller = TabBarViewController ()
         let navigationController = UINavigationController(rootViewController: dashBoardViewcontroller)
         let keyWindow = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
         UIView.transition(with: keyWindow!, duration: 0.5, options: .transitionCrossDissolve, animations: {

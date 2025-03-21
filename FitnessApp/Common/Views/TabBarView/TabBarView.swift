@@ -9,10 +9,7 @@ import Foundation
 import UIKit
 
 protocol TabBarViewDelegate: AnyObject {
-    func didTapHome()
-    func didTapResources()
-    func didTapFavorite()
-    func didTapSupport()
+    func didSelectTab(at index: Int)
 }
 
 class TabBarView: NibView {
@@ -45,24 +42,10 @@ class TabBarView: NibView {
 // MARK: - Actions
 extension TabBarView {
     
-    @IBAction func didTapHome(_ sender: Any) {
-        self.delegate?.didTapHome()
-        setupDashboard(section: 0)
-    }
-    
-    @IBAction func didTapDocument(_ sender: Any) {
-        self.delegate?.didTapResources()
-        setupDashboard(section: 1)
-    }
-    
-    @IBAction func didTapStar(_ sender: Any) {
-        self.delegate?.didTapFavorite()
-        setupDashboard(section: 2)
-    }
-    
-    @IBAction func didTapSupport(_ sender: Any) {
-        self.delegate?.didTapSupport()
-        setupDashboard(section: 3)
+    @IBAction func didTapTab(_ sender: UIButton) {
+        let index = sender.tag
+        delegate?.didSelectTab(at: index)
+        setupDashboard(section: index)
     }
 }
 
@@ -78,6 +61,7 @@ extension TabBarView {
     }
     
     private func setupDashboard(section: Int) {
+        guard section >= 0, section < images.count else { return }
         for (index, imageView) in images.enumerated() {
             imageView.image = (index == section) ? UIImage(resource: selectedImageResources[index]) : UIImage(resource: imageResources[index])
         }
