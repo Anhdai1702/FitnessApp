@@ -1,10 +1,3 @@
-//
-//  UserService.swift
-//  FitnessApp
-//
-//  Created by Phùng Anh Đài  on 18/3/25.
-//
-
 import FirebaseAuth
 import FirebaseFirestore
 
@@ -15,39 +8,51 @@ class UserService {
     private let db = Firestore.firestore()
 
     func fetchUserData(completion: @escaping ([String: Any]?) -> Void) {
-        guard let user = Auth.auth().currentUser else {
+        guard let userId = Auth.auth().currentUser?.uid else {
             completion(nil)
             return
         }
 
-        let userId = user.uid
         let userRef = db.collection("users").document(userId)
+        let infoRef = db.collection("info").document(userId)
 
-        userRef.addSnapshotListener { document, error in
-            guard let document = document, document.exists, let data = document.data() else {
-                completion(nil)
-                return
+        let group = DispatchGroup()
+        var userData: [String: Any] = [:]
+
+        [userRef, infoRef].forEach { ref in
+            group.enter()
+            ref.getDocument { document, error in
+                if let data = document?.data() {
+                    userData.merge(data) { (_, new) in new }
+                }
+                group.leave()
             }
+        }
 
-            let authFullName = user.displayName ?? ""
-            let authEmail = user.email ?? ""
+        group.notify(queue: .main) {
+            completion(userData.isEmpty ? nil : userData)
+        }
+    }
 
-            var updateData: [String: Any] = [:]
+    func updateUserData(userId: String, userData: [String: Any], completion: @escaping (Bool, Error?) -> Void) {
+        let userRef = db.collection("users").document(userId)
+        let infoRef = db.collection("info").document(userId)
 
-            if let storedEmail = data["emailAndNumber"] as? String, storedEmail != authEmail {
-                updateData["emailAndNumber"] = authEmail
+        let group = DispatchGroup()
+        var lastError: Error?
+
+        [userRef, infoRef].forEach { ref in
+            group.enter()
+            ref.updateData(userData) { error in
+                if let error = error {
+                    lastError = error
+                }
+                group.leave()
             }
+        }
 
-            if let storedFullName = data["fullName"] as? String, storedFullName.isEmpty || storedFullName != authFullName {
-                updateData["fullName"] = authFullName
-            }
-
-            if !updateData.isEmpty {
-                userRef.updateData(updateData)
-            }
-
-            completion(data)
+        group.notify(queue: .main) {
+            completion(lastError == nil, lastError)
         }
     }
 }
-

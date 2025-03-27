@@ -29,6 +29,8 @@ class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var noAccountLabel: UILabel!
     @IBOutlet private weak var logInBtn: UIButton!
+    
+    private let defaultStorage = DefaultsStorageImpl()
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -142,7 +144,7 @@ extension LoginViewController {
             let userId = user.uid
             let fullName = user.displayName ?? "Unknown"
             self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-            self.push(viewControllerType: TabBarViewController.self)
+            self.checkFirstLogin()
         }
     }
 
@@ -164,7 +166,7 @@ extension LoginViewController {
                 let email = user.profile?.email ?? "No Email"
                 // save in Firestore
                 self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-                self.push(viewControllerType: TabBarViewController.self)
+                self.checkFirstLogin()
             }
         }
     }
@@ -200,7 +202,7 @@ extension LoginViewController {
                     let email = authResult?.user.email ?? "No Email"
                     // save in Firestore
                     self.saveUserToFirestore(fullName: fullName, emailAndNumber: email, userId: userId)
-                    self.push(viewControllerType: TabBarViewController.self)
+                    self.checkFirstLogin()
                 }
             }
         }
@@ -218,6 +220,7 @@ extension LoginViewController {
                 DispatchQueue.main.async {
                     if success {
                         self.showAlert(title: "notification".localized(), mess: "successfully".localized())
+                        self.checkFirstLogin()
                     } else {
                         self.self .showAlert(title: "error".localized(), mess: "\(String(describing: error?.localizedDescription))")
                     }
@@ -241,5 +244,19 @@ extension LoginViewController {
                 print("\(error.localizedDescription)")
             }
         }
+    }
+    
+    private func checkFirstLogin() {
+        if self.isFirstLogin() {
+            self.defaultStorage.noFirstLoginKey = true
+            self.push(viewControllerType: StartSetUpViewController.self)
+        }
+        else {
+            self.push(viewControllerType: TabBarViewController.self)
+        }
+    }
+    
+    private func isFirstLogin() -> Bool {
+        return !defaultStorage.noFirstLoginKey
     }
 }

@@ -36,7 +36,7 @@ class ProfileSetupViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
-//           fetchUserData()
+        navigationController?.setNavigationBarHidden(true, animated: animated)
        }
 
        override func viewWillDisappear(_ animated: Bool) {
@@ -56,7 +56,7 @@ extension ProfileSetupViewController {
     }
     
     @IBAction func didTapStart(_ sender: Any) {
-        push(viewControllerType: HomeViewController.self)
+        push(viewControllerType: TabBarViewController.self)
     }
 }
 

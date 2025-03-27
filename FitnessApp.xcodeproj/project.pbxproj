@@ -255,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				934033AD2D76E7CC00D2BD86 /* Helper */,
-				934033852D758C2200D2BD86 /* Extensions */,
 				934033822D758C1000D2BD86 /* Common */,
 				934033862D758C4700D2BD86 /* Screens */,
 				934033872D758D1000D2BD86 /* Main */,
@@ -303,17 +302,6 @@
 				934BDA002D8B1ADA00E03185 /* TabBarView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		934033852D758C2200D2BD86 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				93ADCE222D8BFC91005290AD /* APIService */,
-				9379E8302D89605B00803956 /* FilePdf */,
-				934033A72D76E49A00D2BD86 /* Cells */,
-				9340338E2D75B8CC00D2BD86 /* Storage */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		934033862D758C4700D2BD86 /* Screens */ = {
@@ -419,12 +407,16 @@
 		934033AD2D76E7CC00D2BD86 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				934033AE2D76E80C00D2BD86 /* Extension */,
+				93ADCE222D8BFC91005290AD /* APIService */,
+				9379E8302D89605B00803956 /* FilePdf */,
+				934033A72D76E49A00D2BD86 /* Cells */,
+				9340338E2D75B8CC00D2BD86 /* Storage */,
+				934033AE2D76E80C00D2BD86 /* Extensions */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		934033AE2D76E80C00D2BD86 /* Extension */ = {
+		934033AE2D76E80C00D2BD86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				930F27AA2D7849A80085D429 /* UIAlert+Extension.swift */,
@@ -433,7 +425,7 @@
 				934033B02D76E83800D2BD86 /* UIView+Radius.swift */,
 				9361520A2D79F0E300596027 /* PushViewController.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		934033B72D772D7E00D2BD86 /* HomeViewController */ = {

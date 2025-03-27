@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class HeightSelectionViewController: UIViewController {
     
@@ -21,6 +23,8 @@ class HeightSelectionViewController: UIViewController {
     
     private let numbers = Array(100...300)
     private var selectedIndex = 170
+    
+    private let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +45,18 @@ extension HeightSelectionViewController {
     }
     
     @IBAction func didTapNext(_ sender: Any) {
-        push(viewControllerType: GoalSelectionViewController.self)
+        guard let userID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        let ageValue = numbers[selectedIndex]
+        
+        saveUserHeightToFirestore(height: ageValue, userId: userID) { success in
+            if success {
+                DispatchQueue.main.async {
+                    self.push(viewControllerType: GoalSelectionViewController.self)
+                }
+            }
+        }
     }
 }
 
@@ -107,6 +122,18 @@ extension HeightSelectionViewController {
         let indexPath = IndexPath(item: selectedIndex, section: 0)
         weelCollectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: animated)
         selectHeightCollectionView.scrollToItem(at: indexPath, at: .centeredVertically, animated: animated)
+    }
+    
+    private func saveUserHeightToFirestore(height: Int, userId: String, completion: @escaping (Bool) -> Void) {
+        let userRef = db.collection("info").document(userId)
+
+        userRef.setData(["height": height], merge: true) { error in
+            if let error = error {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
     }
 }
 
