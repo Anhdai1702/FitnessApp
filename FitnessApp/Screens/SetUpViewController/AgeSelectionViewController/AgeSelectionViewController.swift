@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
 
 class AgeSelectionViewController: UIViewController {
     
@@ -20,6 +22,8 @@ class AgeSelectionViewController: UIViewController {
     
     private let ages = Array(10...100)
     private var selectedAge: Int = 18
+    
+    private let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +43,18 @@ extension AgeSelectionViewController {
     }
     
     @IBAction func didTapNext(_ sender: Any) {
-        push(viewControllerType: WeightSelectionViewController.self)
+        guard let userID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        let ageValue = ages[selectedAge]
+        
+        saveUserAgeToFirestore(age: ageValue, userId: userID) { success in
+            if success {
+                DispatchQueue.main.async {
+                    self.push(viewControllerType: WeightSelectionViewController.self)
+                }
+            }
+        }
     }
 }
 
@@ -90,6 +105,18 @@ extension AgeSelectionViewController {
         // Default selection
         DispatchQueue.main.async { self.scrollToSelectedAge(animated: false) }
         updateAgeLabel()
+    }
+    
+    func saveUserAgeToFirestore(age: Int, userId: String, completion: @escaping (Bool) -> Void) {
+        let userRef = db.collection("info").document(userId)
+
+        userRef.setData(["age": age], merge: true) { error in
+            if let error = error {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
     }
 }
 

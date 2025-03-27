@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 enum WeightUnit: String {
     case kg = "kg"
@@ -24,6 +26,8 @@ class WeightSelectionViewController: UIViewController {
     @IBOutlet private weak var detailLabel: UILabel!
     
     @IBOutlet private weak var nextBtn: UIButton!
+    
+    private let db = Firestore.firestore()
     
     
     private let numbers = Array(0...500)
@@ -56,7 +60,19 @@ extension WeightSelectionViewController {
     }
     
     @IBAction func didTapNext(_ sender: Any) {
-        push(viewControllerType: HeightSelectionViewController.self)
+        guard let userID = Auth.auth().currentUser?.uid else {
+               return
+           }
+           let weightValue = numbers[selectedIndex] // Giá trị cân nặng được chọn
+           let weightUnit = unitOfWeight.text ?? WeightUnit.kg.rawValue // Lấy đơn vị kg/lb
+           
+           saveUserWeightToFirestore(weight: weightValue, unit: weightUnit, userId: userID) { success in
+               if success {
+                   DispatchQueue.main.async {
+                       self.push(viewControllerType: HeightSelectionViewController.self)
+                   }
+               }
+           }
     }
 }
 
@@ -132,6 +148,18 @@ extension WeightSelectionViewController {
 
         selectNumberCollectionView.decelerationRate = .fast
         numberCollectionView.decelerationRate = .fast
+    }
+    
+    func saveUserWeightToFirestore(weight: Int, unit: String, userId: String, completion: @escaping (Bool) -> Void) {
+        let userRef = db.collection("info").document(userId)
+
+        userRef.setData(["weight": weight, "unit": unit], merge: true) { error in
+            if let error = error {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
     }
 }
 

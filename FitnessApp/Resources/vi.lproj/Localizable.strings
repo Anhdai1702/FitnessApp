@@ -112,3 +112,11 @@
 "weight" = "Cân nặng";
 "age" = "Tuổi";
 "height" = "Chiều cao";
+
+"edit_full_name" = "Họ và tên";
+"edit_email" = "Email";
+"edit_mobile_number" = "Số điện thoại";
+"edit_date_of_birth" = "Ngày sinh";
+"edit_weight" = "Cân nặng";
+"edit_height" = "Chiều cao";
+"update_profile" = "Cập nhập thông tin";

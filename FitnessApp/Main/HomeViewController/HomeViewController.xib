@@ -51,7 +51,7 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtP-eN-SQp">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="820.66666666666663"/>
+                            <rect key="frame" x="0.0" y="20" width="393" height="820.66666666666663"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGe-7s-cLc">
                                     <rect key="frame" x="35" y="29" width="323" height="42"/>
@@ -890,7 +890,7 @@ Challenge</string>
                         <constraint firstAttribute="trailing" secondItem="UtP-eN-SQp" secondAttribute="trailing" id="891-Dg-Gwc"/>
                         <constraint firstItem="UtP-eN-SQp" firstAttribute="width" secondItem="UDV-ea-5IP" secondAttribute="width" id="9wU-LM-1U7"/>
                         <constraint firstAttribute="bottom" secondItem="UtP-eN-SQp" secondAttribute="bottom" id="hQu-f2-ZDF"/>
-                        <constraint firstItem="UtP-eN-SQp" firstAttribute="top" secondItem="UDV-ea-5IP" secondAttribute="top" id="xO3-7n-ASj"/>
+                        <constraint firstItem="UtP-eN-SQp" firstAttribute="top" secondItem="UDV-ea-5IP" secondAttribute="top" constant="20" symbolic="YES" id="xO3-7n-ASj"/>
                         <constraint firstItem="UtP-eN-SQp" firstAttribute="leading" secondItem="UDV-ea-5IP" secondAttribute="leading" id="yjQ-oQ-5u6"/>
                     </constraints>
                 </scrollView>

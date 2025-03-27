@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
+import FirebaseStorage
 
 enum Gender {
     case male
@@ -86,5 +89,19 @@ extension GenderViewController {
         isChangeMaleImage.image = UIImage(named: selectedGender == .male ? "male_on" : "male_off")
         isChangeFemeleImage.image = UIImage(named: selectedGender == .female ? "female_on" : "female_off")
     }
+    
+    private func saveGenderToFirestore() {
+        guard let userID = Auth.auth().currentUser?.uid, let gender = selectedGender else { return }
+        
+        let db = Firestore.firestore()
+        db.collection("users").document(userID).setData(["gender": gender == .male ? "male" : "female"], merge: true) { error in
+            if let error = error {
+                print("Lỗi khi lưu giới tính: \(error.localizedDescription)")
+            } else {
+                print("Đã lưu giới tính thành công!")
+            }
+        }
+    }
+
 }
 
