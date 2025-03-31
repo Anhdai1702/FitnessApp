@@ -120,3 +120,13 @@
 "edit_weight" = "Cân nặng";
 "edit_height" = "Chiều cao";
 "update_profile" = "Cập nhập thông tin";
+
+"notifications" = "Thông báo";
+"reminders_title" = "Nhắc nhở";
+"system_title" = "Hệ thống";
+
+"search_title" = "Tìm kiếm";
+"search_all" = "Tất cả";
+"search_workout" = "Bài tập";
+"search_nutrition" = "Dinh dưỡng";
+"search_placeholder" = "Nhập từ khóa...";

@@ -83,10 +83,11 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     
     @IBAction func didTapSearch(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        push(viewControllerType: SearchViewController.self)
     }
     
     @IBAction func didTapNotification(_ sender: Any) {
+        push(viewControllerType: NotificationsViewController.self)
     }
     
     @IBAction func didTapUser(_ sender: Any) {
