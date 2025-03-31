@@ -120,4 +120,14 @@
 "edit_height" = "Height";
 "update_profile" = "Update Profile";
 
+"notifications" = "Notifications";
+"reminders_title" = "Reminders";
+"system_title" = "System";
+
+"search_title" = "Search";
+"search_all" = "All";
+"search_workout" = "Workout";
+"search_nutrition" = "Nutrition";
+"search_placeholder" = "Enter keyword...";
+
 

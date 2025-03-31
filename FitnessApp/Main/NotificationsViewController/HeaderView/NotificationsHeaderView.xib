@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsHeaderView" customModule="FitnessApp" customModuleProvider="target">
+            <connections>
+                <outlet property="remindersLabel" destination="5BJ-VK-osT" id="eef-Xa-WM8"/>
+                <outlet property="remindersView" destination="bWz-uh-gad" id="1TF-u5-hah"/>
+                <outlet property="systemLabel" destination="C9i-7v-G6t" id="6qL-En-adv"/>
+                <outlet property="systemView" destination="itR-jK-3Hn" id="wy1-dL-Idi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="685" height="331"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="TLq-2Z-YKq">
+                    <rect key="frame" x="181" y="150.66666666666666" width="323" height="30"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWz-uh-gad">
+                            <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-4z-Yr9">
+                                    <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapReminder:" destination="-1" eventType="touchUpInside" id="XcT-j4-So0"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-VK-osT">
+                                    <rect key="frame" x="53.333333333333343" y="4.6666666666666856" width="44.333333333333343" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Oxy-4z-Yr9" secondAttribute="trailing" id="4JM-Tl-snh"/>
+                                <constraint firstItem="Oxy-4z-Yr9" firstAttribute="top" secondItem="bWz-uh-gad" secondAttribute="top" id="8Hb-Pk-xtV"/>
+                                <constraint firstAttribute="height" constant="30" id="Lu1-ho-6FE"/>
+                                <constraint firstItem="5BJ-VK-osT" firstAttribute="centerY" secondItem="bWz-uh-gad" secondAttribute="centerY" id="Mmr-qM-FtC"/>
+                                <constraint firstItem="Oxy-4z-Yr9" firstAttribute="leading" secondItem="bWz-uh-gad" secondAttribute="leading" id="aLd-01-ybD"/>
+                                <constraint firstAttribute="width" constant="151" id="frd-mm-LQx"/>
+                                <constraint firstItem="5BJ-VK-osT" firstAttribute="centerX" secondItem="bWz-uh-gad" secondAttribute="centerX" id="vFe-vz-3eg"/>
+                                <constraint firstAttribute="bottom" secondItem="Oxy-4z-Yr9" secondAttribute="bottom" id="yAu-Fz-5Ll"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itR-jK-3Hn">
+                            <rect key="frame" x="172" y="0.0" width="151" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-7v-G6t">
+                                    <rect key="frame" x="53.333333333333314" y="4.6666666666666856" width="44.333333333333343" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eS1-wd-pqf">
+                                    <rect key="frame" x="0.0" y="0.0" width="151" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapSystem:" destination="-1" eventType="touchUpInside" id="Bcx-fk-6KB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="eS1-wd-pqf" secondAttribute="trailing" id="8Sj-af-JOf"/>
+                                <constraint firstItem="C9i-7v-G6t" firstAttribute="centerX" secondItem="itR-jK-3Hn" secondAttribute="centerX" id="BjL-Rh-w7A"/>
+                                <constraint firstAttribute="bottom" secondItem="eS1-wd-pqf" secondAttribute="bottom" id="QGm-yH-HUe"/>
+                                <constraint firstAttribute="height" constant="30" id="igh-i2-ag2"/>
+                                <constraint firstItem="eS1-wd-pqf" firstAttribute="top" secondItem="itR-jK-3Hn" secondAttribute="top" id="lPR-qx-Ozx"/>
+                                <constraint firstItem="C9i-7v-G6t" firstAttribute="centerY" secondItem="itR-jK-3Hn" secondAttribute="centerY" id="mNQ-o4-m2c"/>
+                                <constraint firstItem="eS1-wd-pqf" firstAttribute="leading" secondItem="itR-jK-3Hn" secondAttribute="leading" id="qx2-dJ-m9R"/>
+                                <constraint firstAttribute="width" constant="151" id="yf9-8Q-e3c"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TLq-2Z-YKq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5SK-Ui-1ML"/>
+                <constraint firstItem="TLq-2Z-YKq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jdh-80-htd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="335.1145038167939" y="-20.070422535211268"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

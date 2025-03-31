@@ -10,5 +10,6 @@ target 'FitnessApp' do
   pod 'lottie-ios'
   pod 'FBSDKLoginKit'
   pod 'RealmSwift'
-  
+  pod 'SDWebImage'
+
 end
