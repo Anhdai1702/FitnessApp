@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class HomeViewController: UIViewController {
     
@@ -42,6 +43,8 @@ class HomeViewController: UIViewController {
     private var recommendationsImages: [UIImageView] = []
     private var articlesAndTipsImages: [UIImageView] = []
     
+    private var webView: WKWebView!
+    
     private var images: [UIImageView] {
         return [workoutImage, progressImage, nutritionImage, communityImage]
     }
@@ -67,6 +70,19 @@ class HomeViewController: UIViewController {
         setupUI()
         NotificationCenter.default.addObserver(self, selector: #selector(userProfileDidUpdate), name: NSNotification.Name("UserProfileUpdated"), object: nil)
     }
+    
+    
+    private func setupWebView() {
+           webView = WKWebView(frame: view.bounds)
+           view.addSubview(webView)
+       }
+
+       func loadYouTubeVideo(videoID: String) {
+           let urlString = "https://www.youtube.com/shorts/MLoZuAkIyZI"
+           if let url = URL(string: urlString) {
+               webView.load(URLRequest(url: url))
+           }
+       }
     
     @objc private func userProfileDidUpdate() {
         fetchUserData()
@@ -114,9 +130,15 @@ extension HomeViewController {
     }
     
     @IBAction func didTapSquatVideo(_ sender: Any) {
+        if let url = URL(string: YouTubeLinks.squatExercise) {
+               UIApplication.shared.open(url)
+           }
     }
     
     @IBAction func didTapFullBodyVideo(_ sender: Any) {
+        if let url = URL(string: YouTubeLinks.fullBodyStretching) {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func didTapFavoriteSquat(_ sender: Any) {
@@ -126,11 +148,16 @@ extension HomeViewController {
     }
     
     @IBAction func didTapFavoriteSupplementGuide(_ sender: Any) {
+        if let url = URL(string: YouTubeLinks.supplementGuide) {
+            UIApplication.shared.open(url)
+        }
     }
     
     @IBAction func didTapEffectiveDailyRoutines(_ sender: Any) {
+        if let url = URL(string: YouTubeLinks.QuickAndEffectiveDailyRoutines) {
+            UIApplication.shared.open(url)
+        }
     }
-
 }
 
 // MARK: - Custom UI
