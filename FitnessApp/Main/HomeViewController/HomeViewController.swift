@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
     
@@ -39,9 +40,19 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var supplementGuideImage: UIImageView!
     @IBOutlet private weak var quickAndEffectiveImage: UIImageView!
     @IBOutlet private weak var weeklyChallengeImage: UIImageView!
+    @IBOutlet private weak var favoriteSquadExerciseImage: UIImageView!
+    @IBOutlet private weak var favoriteFullBodyStretchingImage: UIImageView!
+    @IBOutlet private weak var favoriteSupplementGuideImage: UIImageView!
+    @IBOutlet private weak var favoriteQuickAndEffectiveImage: UIImageView!
+    
+    private var isSelectFavorite: Bool = false
+    
+    private var indexFitness = [IndexFitnessApp]()
+    private var a = [IndexFitness]()
     
     private var recommendationsImages: [UIImageView] = []
     private var articlesAndTipsImages: [UIImageView] = []
+    
     
     private var webView: WKWebView!
     
@@ -92,7 +103,6 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
 }
 
 // MARK: - Actions
@@ -141,23 +151,31 @@ extension HomeViewController {
         }
     }
     
-    @IBAction func didTapFavoriteSquat(_ sender: Any) {
-    }
-    
-    @IBAction func didTapFavoriteFullBody(_ sender: Any) {
-    }
-    
-    @IBAction func didTapFavoriteSupplementGuide(_ sender: Any) {
+    @IBAction func didTapSupplementGuide(_ sender: Any) {
         if let url = URL(string: YouTubeLinks.supplementGuide) {
             UIApplication.shared.open(url)
         }
     }
     
-    @IBAction func didTapEffectiveDailyRoutines(_ sender: Any) {
+    @IBAction func didTapQuickAndEffectiveDailyRoutines(_ sender: Any) {
         if let url = URL(string: YouTubeLinks.QuickAndEffectiveDailyRoutines) {
             UIApplication.shared.open(url)
         }
     }
+    
+    @IBAction func didTapFavoriteSquat(_ sender: Any) {
+    }
+    
+    @IBAction func didTapFavoriteFullBody(_ sender: Any) {
+        
+    }
+    
+    @IBAction func didTapFavoriteSupplementGuide(_ sender: Any) {
+    }
+    
+    @IBAction func didTapFavoriteEffectiveDailyRoutines(_ sender: Any) {
+    }
+    
 }
 
 // MARK: - Custom UI
