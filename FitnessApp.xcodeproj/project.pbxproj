@@ -29,6 +29,20 @@
 		934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B22D76E83800D2BD86 /* UIColor+Extension.swift */; };
 		934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934033B82D772D9500D2BD86 /* HomeViewController.swift */; };
 		934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934033B92D772D9500D2BD86 /* HomeViewController.xib */; };
+		9342D3DC2D9FF19100D293DE /* WorkoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9342D3DB2D9FF19100D293DE /* WorkoutTableViewCell.xib */; };
+		9342D3DD2D9FF19100D293DE /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342D3DA2D9FF19100D293DE /* WorkoutTableViewCell.swift */; };
+		9342D3E02D9FF7CD00D293DE /* WorkoutHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9342D3DF2D9FF7CD00D293DE /* WorkoutHeaderView.swift */; };
+		9342D3E22D9FF7DF00D293DE /* WorkoutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9342D3E12D9FF7DF00D293DE /* WorkoutHeaderView.xib */; };
+		9349858F2DA07D0F00456481 /* BeginnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349858D2DA07D0F00456481 /* BeginnerViewController.swift */; };
+		934985902DA07D0F00456481 /* BeginnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9349858E2DA07D0F00456481 /* BeginnerViewController.xib */; };
+		934985942DA07D3000456481 /* IntermediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934985922DA07D3000456481 /* IntermediateViewController.swift */; };
+		934985952DA07D3000456481 /* IntermediateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934985932DA07D3000456481 /* IntermediateViewController.xib */; };
+		9349859D2DA07D6300456481 /* AdvancedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9349859C2DA07D6300456481 /* AdvancedViewController.xib */; };
+		9349859E2DA07D6300456481 /* AdvancedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349859B2DA07D6300456481 /* AdvancedViewController.swift */; };
+		934985A22DA110D000456481 /* BeginnerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934985A12DA110D000456481 /* BeginnerTableViewCell.xib */; };
+		934985A32DA110D000456481 /* BeginnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934985A02DA110D000456481 /* BeginnerTableViewCell.swift */; };
+		934985A62DA1118600456481 /* BeginnerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934985A52DA1118600456481 /* BeginnerHeaderView.swift */; };
+		934985A82DA1119000456481 /* BeginnerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934985A72DA1119000456481 /* BeginnerHeaderView.xib */; };
 		934BD9FE2D8B1A9B00E03185 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */; };
 		9357C55E2D8C802200BC50ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9357C55C2D8C802200BC50ED /* ProfileViewController.swift */; };
 		9357C55F2D8C802200BC50ED /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9357C55D2D8C802200BC50ED /* ProfileViewController.xib */; };
@@ -49,6 +63,8 @@
 		936904762D8B29F50036C375 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936904742D8B29F50036C375 /* FavoriteViewController.xib */; };
 		936904792D8B2A040036C375 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936904772D8B2A040036C375 /* SupportViewController.swift */; };
 		9369047A2D8B2A040036C375 /* SupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936904782D8B2A040036C375 /* SupportViewController.xib */; };
+		937329312DA1374500577F1D /* TitleSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937329302DA1374500577F1D /* TitleSectionHeaderView.swift */; };
+		937329332DA1375A00577F1D /* TitleSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937329322DA1375A00577F1D /* TitleSectionHeaderView.xib */; };
 		9378111E2D985E3F000A3129 /* HeaderSearchAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9378111D2D985E3F000A3129 /* HeaderSearchAllView.swift */; };
 		937811202D985E56000A3129 /* HeaderSearchAllView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9378111F2D985E56000A3129 /* HeaderSearchAllView.xib */; };
 		937811222D985E76000A3129 /* HeaderSearchWorkAndNutriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937811212D985E76000A3129 /* HeaderSearchWorkAndNutriView.swift */; };
@@ -60,6 +76,8 @@
 		9379E8362D8960D400803956 /* FilePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8352D8960D400803956 /* FilePdf.swift */; };
 		9379E83A2D8974CD00803956 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E8392D8974CD00803956 /* UserProfileModel.swift */; };
 		9379E83C2D89C5FB00803956 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9379E83B2D89C5FB00803956 /* UserService.swift */; };
+		9387D7172DA0309E0018739E /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9387D7162DA0309E0018739E /* TitleHeaderView.swift */; };
+		9387D7192DA030B00018739E /* TitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9387D7182DA030B00018739E /* TitleHeaderView.xib */; };
 		938DBFC32D959A1900A2FAD4 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DBFC12D959A1900A2FAD4 /* NotificationsTableViewCell.swift */; };
 		938DBFC42D959A1900A2FAD4 /* NotificationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938DBFC22D959A1900A2FAD4 /* NotificationsTableViewCell.xib */; };
 		938DBFC62D959C6300A2FAD4 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DBFC52D959C6300A2FAD4 /* NotificationModel.swift */; };
@@ -101,6 +119,8 @@
 		93DC34FA2D984C3C008E72AC /* SearchAllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC34F82D984C3C008E72AC /* SearchAllTableViewCell.xib */; };
 		93DC34FE2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DC34FC2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.swift */; };
 		93DC34FF2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC34FD2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.xib */; };
+		93DDFD1A2D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DDFD192D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.xib */; };
+		93DDFD1B2D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DDFD182D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.swift */; };
 		93DE9CF02D97D924005A026E /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DE9CEF2D97D924005A026E /* SearchViewController.xib */; };
 		93DE9CF12D97D924005A026E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DE9CEE2D97D924005A026E /* SearchViewController.swift */; };
 		93E102862D837D9300B6011D /* PhysicalActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E102842D837D9300B6011D /* PhysicalActivityViewController.swift */; };
@@ -124,6 +144,9 @@
 		93EED4A32D787EC000E55018 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A22D787EC000E55018 /* FirebaseDatabase */; };
 		93EED4A52D787EC000E55018 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A42D787EC000E55018 /* FirebaseFirestore */; };
 		93EED4A72D787EC000E55018 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 93EED4A62D787EC000E55018 /* FirebaseStorage */; };
+		93F567822DA4FDC000B6662D /* BeginnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F567812DA4FDC000B6662D /* BeginnerModel.swift */; };
+		93F567842DA5082100B6662D /* LevelsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F567832DA5082100B6662D /* LevelsHeaderView.swift */; };
+		93F567862DA5083700B6662D /* LevelsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93F567852DA5083700B6662D /* LevelsHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +176,20 @@
 		934033B22D76E83800D2BD86 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		934033B82D772D9500D2BD86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		934033B92D772D9500D2BD86 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9342D3DA2D9FF19100D293DE /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		9342D3DB2D9FF19100D293DE /* WorkoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutTableViewCell.xib; sourceTree = "<group>"; };
+		9342D3DF2D9FF7CD00D293DE /* WorkoutHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHeaderView.swift; sourceTree = "<group>"; };
+		9342D3E12D9FF7DF00D293DE /* WorkoutHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutHeaderView.xib; sourceTree = "<group>"; };
+		9349858D2DA07D0F00456481 /* BeginnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnerViewController.swift; sourceTree = "<group>"; };
+		9349858E2DA07D0F00456481 /* BeginnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeginnerViewController.xib; sourceTree = "<group>"; };
+		934985922DA07D3000456481 /* IntermediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediateViewController.swift; sourceTree = "<group>"; };
+		934985932DA07D3000456481 /* IntermediateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntermediateViewController.xib; sourceTree = "<group>"; };
+		9349859B2DA07D6300456481 /* AdvancedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedViewController.swift; sourceTree = "<group>"; };
+		9349859C2DA07D6300456481 /* AdvancedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedViewController.xib; sourceTree = "<group>"; };
+		934985A02DA110D000456481 /* BeginnerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnerTableViewCell.swift; sourceTree = "<group>"; };
+		934985A12DA110D000456481 /* BeginnerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeginnerTableViewCell.xib; sourceTree = "<group>"; };
+		934985A52DA1118600456481 /* BeginnerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnerHeaderView.swift; sourceTree = "<group>"; };
+		934985A72DA1119000456481 /* BeginnerHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeginnerHeaderView.xib; sourceTree = "<group>"; };
 		934BD9FC2D8B1A9B00E03185 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9357C55C2D8C802200BC50ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9357C55D2D8C802200BC50ED /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +210,8 @@
 		936904742D8B29F50036C375 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		936904772D8B2A040036C375 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		936904782D8B2A040036C375 /* SupportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportViewController.xib; sourceTree = "<group>"; };
+		937329302DA1374500577F1D /* TitleSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSectionHeaderView.swift; sourceTree = "<group>"; };
+		937329322DA1375A00577F1D /* TitleSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSectionHeaderView.xib; sourceTree = "<group>"; };
 		9378111D2D985E3F000A3129 /* HeaderSearchAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSearchAllView.swift; sourceTree = "<group>"; };
 		9378111F2D985E56000A3129 /* HeaderSearchAllView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderSearchAllView.xib; sourceTree = "<group>"; };
 		937811212D985E76000A3129 /* HeaderSearchWorkAndNutriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSearchWorkAndNutriView.swift; sourceTree = "<group>"; };
@@ -184,6 +223,8 @@
 		9379E8352D8960D400803956 /* FilePdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePdf.swift; sourceTree = "<group>"; };
 		9379E8392D8974CD00803956 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		9379E83B2D89C5FB00803956 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9387D7162DA0309E0018739E /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		9387D7182DA030B00018739E /* TitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderView.xib; sourceTree = "<group>"; };
 		938DBFC12D959A1900A2FAD4 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
 		938DBFC22D959A1900A2FAD4 /* NotificationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsTableViewCell.xib; sourceTree = "<group>"; };
 		938DBFC52D959C6300A2FAD4 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
@@ -227,6 +268,8 @@
 		93DC34F82D984C3C008E72AC /* SearchAllTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAllTableViewCell.xib; sourceTree = "<group>"; };
 		93DC34FC2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAndNutritionTableViewCell.swift; sourceTree = "<group>"; };
 		93DC34FD2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutAndNutritionTableViewCell.xib; sourceTree = "<group>"; };
+		93DDFD182D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutMainContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		93DDFD192D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutMainContentCollectionViewCell.xib; sourceTree = "<group>"; };
 		93DE9CEE2D97D924005A026E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		93DE9CEF2D97D924005A026E /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		93E102842D837D9300B6011D /* PhysicalActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +287,9 @@
 		93E480012D7C4250008AF6E4 /* ProfileSetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSetupViewController.xib; sourceTree = "<group>"; };
 		93EB51552D8C68C80074331C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		93EB51562D8C68C80074331C /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		93F567812DA4FDC000B6662D /* BeginnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginnerModel.swift; sourceTree = "<group>"; };
+		93F567832DA5082100B6662D /* LevelsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsHeaderView.swift; sourceTree = "<group>"; };
+		93F567852DA5083700B6662D /* LevelsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LevelsHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +387,7 @@
 				9379E8392D8974CD00803956 /* UserProfileModel.swift */,
 				9379E83B2D89C5FB00803956 /* UserService.swift */,
 				938DBFC52D959C6300A2FAD4 /* NotificationModel.swift */,
+				93F567812DA4FDC000B6662D /* BeginnerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -440,6 +487,8 @@
 		934033A72D76E49A00D2BD86 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9349859F2DA110AC00456481 /* BeginnerCell */,
+				93DDFD1C2D9EB5D10079C967 /* WorkoutCells */,
 				93DC34F22D984B4C008E72AC /* SearchTableViewCell */,
 				938DBFC02D959A0000A2FAD4 /* NotificationCell */,
 				934033A82D76E4A300D2BD86 /* OnboardingCell */,
@@ -492,6 +541,85 @@
 				934033B92D772D9500D2BD86 /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		9342D3D82D9FF15D00D293DE /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				93DDFD182D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.swift */,
+				93DDFD192D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		9342D3D92D9FF16F00D293DE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9342D3DA2D9FF19100D293DE /* WorkoutTableViewCell.swift */,
+				9342D3DB2D9FF19100D293DE /* WorkoutTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		9342D3DE2D9FF7B600D293DE /* HeaderWorkoutView */ = {
+			isa = PBXGroup;
+			children = (
+				93F567832DA5082100B6662D /* LevelsHeaderView.swift */,
+				93F567852DA5083700B6662D /* LevelsHeaderView.xib */,
+				9342D3DF2D9FF7CD00D293DE /* WorkoutHeaderView.swift */,
+				9342D3E12D9FF7DF00D293DE /* WorkoutHeaderView.xib */,
+				9387D7162DA0309E0018739E /* TitleHeaderView.swift */,
+				9387D7182DA030B00018739E /* TitleHeaderView.xib */,
+			);
+			path = HeaderWorkoutView;
+			sourceTree = "<group>";
+		};
+		9349858C2DA07CF100456481 /* BeginnerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934985A42DA1116600456481 /* HeaderBeginnerView */,
+				9349858D2DA07D0F00456481 /* BeginnerViewController.swift */,
+				9349858E2DA07D0F00456481 /* BeginnerViewController.xib */,
+			);
+			path = BeginnerViewController;
+			sourceTree = "<group>";
+		};
+		934985912DA07D2000456481 /* IntermediateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				934985922DA07D3000456481 /* IntermediateViewController.swift */,
+				934985932DA07D3000456481 /* IntermediateViewController.xib */,
+			);
+			path = IntermediateViewController;
+			sourceTree = "<group>";
+		};
+		9349859A2DA07D4B00456481 /* AdvancedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9349859B2DA07D6300456481 /* AdvancedViewController.swift */,
+				9349859C2DA07D6300456481 /* AdvancedViewController.xib */,
+			);
+			path = AdvancedViewController;
+			sourceTree = "<group>";
+		};
+		9349859F2DA110AC00456481 /* BeginnerCell */ = {
+			isa = PBXGroup;
+			children = (
+				934985A02DA110D000456481 /* BeginnerTableViewCell.swift */,
+				934985A12DA110D000456481 /* BeginnerTableViewCell.xib */,
+			);
+			path = BeginnerCell;
+			sourceTree = "<group>";
+		};
+		934985A42DA1116600456481 /* HeaderBeginnerView */ = {
+			isa = PBXGroup;
+			children = (
+				934985A52DA1118600456481 /* BeginnerHeaderView.swift */,
+				934985A72DA1119000456481 /* BeginnerHeaderView.xib */,
+				937329302DA1374500577F1D /* TitleSectionHeaderView.swift */,
+				937329322DA1375A00577F1D /* TitleSectionHeaderView.xib */,
+			);
+			path = HeaderBeginnerView;
 			sourceTree = "<group>";
 		};
 		934BD9FB2D8B1A5500E03185 /* TabBarViewController */ = {
@@ -637,8 +765,12 @@
 		93ADCE252D8C3AA7005290AD /* WorkoutViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9342D3DE2D9FF7B600D293DE /* HeaderWorkoutView */,
 				93ADCE292D8C3B08005290AD /* WorkoutViewController.swift */,
 				93ADCE2A2D8C3B08005290AD /* WorkoutViewController.xib */,
+				9349859A2DA07D4B00456481 /* AdvancedViewController */,
+				934985912DA07D2000456481 /* IntermediateViewController */,
+				9349858C2DA07CF100456481 /* BeginnerViewController */,
 			);
 			path = WorkoutViewController;
 			sourceTree = "<group>";
@@ -745,6 +877,15 @@
 				93DC34FD2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.xib */,
 			);
 			path = SearchTableViewCell;
+			sourceTree = "<group>";
+		};
+		93DDFD1C2D9EB5D10079C967 /* WorkoutCells */ = {
+			isa = PBXGroup;
+			children = (
+				9342D3D92D9FF16F00D293DE /* TableViewCells */,
+				9342D3D82D9FF15D00D293DE /* CollectionViewCells */,
+			);
+			path = WorkoutCells;
 			sourceTree = "<group>";
 		};
 		93DE9CF22D97DD57005A026E /* SearchViewController */ = {
@@ -940,14 +1081,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E480032D7C4250008AF6E4 /* ProfileSetupViewController.xib in Resources */,
+				93DDFD1A2D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.xib in Resources */,
 				9357C5682D8C806B00BC50ED /* SettingViewController.xib in Resources */,
 				93E47FF42D7C4161008AF6E4 /* WeightSelectionViewController.xib in Resources */,
 				9369046B2D8B1B350036C375 /* TabBarView.xib in Resources */,
+				9342D3E22D9FF7DF00D293DE /* WorkoutHeaderView.xib in Resources */,
 				9357C55F2D8C802200BC50ED /* ProfileViewController.xib in Resources */,
 				93AEF7BC2D834E98006E3CBD /* SelectHeightCollectionViewCell.xib in Resources */,
 				937811242D985E81000A3129 /* HeaderSearchWorkAndNutriView.xib in Resources */,
 				93ADCE2B2D8C3B08005290AD /* WorkoutViewController.xib in Resources */,
 				93ADCE342D8C3B2E005290AD /* NutritionViewController.xib in Resources */,
+				934985A82DA1119000456481 /* BeginnerHeaderView.xib in Resources */,
+				9387D7192DA030B00018739E /* TitleHeaderView.xib in Resources */,
 				93E102872D837D9300B6011D /* PhysicalActivityViewController.xib in Resources */,
 				93DC34FF2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.xib in Resources */,
 				936152082D79EFB800596027 /* ForgetPasswordViewController.xib in Resources */,
@@ -960,6 +1105,7 @@
 				937811292D986082000A3129 /* SearchAllCollectionViewCell.xib in Resources */,
 				9369047A2D8B2A040036C375 /* SupportViewController.xib in Resources */,
 				9379E8342D89609C00803956 /* TermsOfUse.pdf in Resources */,
+				9349859D2DA07D6300456481 /* AdvancedViewController.xib in Resources */,
 				93DE9CF02D97D924005A026E /* SearchViewController.xib in Resources */,
 				93E47FE42D7B62CC008AF6E4 /* StartSetUpViewController.xib in Resources */,
 				93EB51582D8C68C80074331C /* UserTableViewCell.xib in Resources */,
@@ -970,16 +1116,21 @@
 				93ADCE372D8C3B40005290AD /* CommunityViewController.xib in Resources */,
 				938DBFD12D95BA8100A2FAD4 /* NotificationsHeaderView.xib in Resources */,
 				93AA48382D8433CC00301A3F /* Localizable.strings in Resources */,
+				93F567862DA5083700B6662D /* LevelsHeaderView.xib in Resources */,
 				93D2345C2D7F0AE60000E945 /* AgeCollectionViewCell.xib in Resources */,
 				93AA480B2D84224800301A3F /* LoginViewController.xib in Resources */,
 				9340339B2D75D9B800D2BD86 /* SignUpViewController.xib in Resources */,
+				9342D3DC2D9FF19100D293DE /* WorkoutTableViewCell.xib in Resources */,
 				9340338D2D759DDF00D2BD86 /* SplashViewController.xib in Resources */,
 				93A44B5A2D77691000F01324 /* GoogleService-Info.plist in Resources */,
 				93E47FFE2D7C4235008AF6E4 /* AgeSelectionViewController.xib in Resources */,
+				934985952DA07D3000456481 /* IntermediateViewController.xib in Resources */,
 				9359A7112D8703450046239D /* SetPasswordViewController.xib in Resources */,
 				937811202D985E56000A3129 /* HeaderSearchAllView.xib in Resources */,
+				937329332DA1375A00577F1D /* TitleSectionHeaderView.xib in Resources */,
 				938DBFC42D959A1900A2FAD4 /* NotificationsTableViewCell.xib in Resources */,
 				936904722D8B29E40036C375 /* ResourcesViewController.xib in Resources */,
+				934985A22DA110D000456481 /* BeginnerTableViewCell.xib in Resources */,
 				93ADCE302D8C3B19005290AD /* ProgressViewController.xib in Resources */,
 				93E47FEA2D7C40A8008AF6E4 /* GenderViewController.xib in Resources */,
 				93ADCE3E2D8C41F6005290AD /* UserProfileViewController.xib in Resources */,
@@ -987,6 +1138,7 @@
 				93ADCE422D8C420A005290AD /* NotificationsViewController.xib in Resources */,
 				93DC34FA2D984C3C008E72AC /* SearchAllTableViewCell.xib in Resources */,
 				9357C5632D8C805300BC50ED /* FavoritesViewController.xib in Resources */,
+				934985902DA07D0F00456481 /* BeginnerViewController.xib in Resources */,
 				934033BB2D772D9500D2BD86 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1043,7 +1195,9 @@
 				9359A7102D8703450046239D /* SetPasswordViewController.swift in Sources */,
 				934033962D75D9AA00D2BD86 /* LoginViewController.swift in Sources */,
 				938DBFCB2D95B66C00A2FAD4 /* NotificationsHeaderView.swift in Sources */,
+				93F567842DA5082100B6662D /* LevelsHeaderView.swift in Sources */,
 				936904792D8B2A040036C375 /* SupportViewController.swift in Sources */,
+				9349858F2DA07D0F00456481 /* BeginnerViewController.swift in Sources */,
 				9378111E2D985E3F000A3129 /* HeaderSearchAllView.swift in Sources */,
 				93ADCE2F2D8C3B19005290AD /* ProgressViewController.swift in Sources */,
 				9379E8362D8960D400803956 /* FilePdf.swift in Sources */,
@@ -1051,17 +1205,20 @@
 				9357C55E2D8C802200BC50ED /* ProfileViewController.swift in Sources */,
 				9340339A2D75D9B800D2BD86 /* SignUpViewController.swift in Sources */,
 				93ADCE242D8BFCC6005290AD /* APIService.swift in Sources */,
+				9349859E2DA07D6300456481 /* AdvancedViewController.swift in Sources */,
 				93ADCE332D8C3B2E005290AD /* NutritionViewController.swift in Sources */,
 				93AEF7BD2D834E98006E3CBD /* SelectHeightCollectionViewCell.swift in Sources */,
 				9379E83C2D89C5FB00803956 /* UserService.swift in Sources */,
 				93DC34F92D984C3C008E72AC /* SearchAllTableViewCell.swift in Sources */,
 				93E47FF32D7C4161008AF6E4 /* WeightSelectionViewController.swift in Sources */,
 				938DBFD52D95D06F00A2FAD4 /* TitleNotificationsView.swift in Sources */,
+				9342D3E02D9FF7CD00D293DE /* WorkoutHeaderView.swift in Sources */,
 				9361520B2D79F0E300596027 /* PushViewController.swift in Sources */,
 				934033B52D76E83800D2BD86 /* UIView+Border.swift in Sources */,
 				936904692D8B1B280036C375 /* TabBarView.swift in Sources */,
 				93ADCE2C2D8C3B08005290AD /* WorkoutViewController.swift in Sources */,
 				93DC34FE2D984C6B008E72AC /* WorkoutAndNutritionTableViewCell.swift in Sources */,
+				93F567822DA4FDC000B6662D /* BeginnerModel.swift in Sources */,
 				93ADCE3F2D8C41F6005290AD /* UserProfileViewController.swift in Sources */,
 				938DBFC32D959A1900A2FAD4 /* NotificationsTableViewCell.swift in Sources */,
 				93ADCE432D8C420A005290AD /* NotificationsViewController.swift in Sources */,
@@ -1069,6 +1226,7 @@
 				9379E83A2D8974CD00803956 /* UserProfileModel.swift in Sources */,
 				938DBFC62D959C6300A2FAD4 /* NotificationModel.swift in Sources */,
 				934033BA2D772D9500D2BD86 /* HomeViewController.swift in Sources */,
+				9387D7172DA0309E0018739E /* TitleHeaderView.swift in Sources */,
 				936904752D8B29F50036C375 /* FavoriteViewController.swift in Sources */,
 				93ADCE382D8C3B40005290AD /* CommunityViewController.swift in Sources */,
 				93D234652D7F49700000E945 /* SelectNumberCollectionViewCell.swift in Sources */,
@@ -1085,6 +1243,7 @@
 				9340339E2D75D9CD00D2BD86 /* OnboardingViewController.swift in Sources */,
 				9357C5692D8C806B00BC50ED /* SettingViewController.swift in Sources */,
 				936904712D8B29E40036C375 /* ResourcesViewController.swift in Sources */,
+				93DDFD1B2D9EB5C20079C967 /* WorkoutMainContentCollectionViewCell.swift in Sources */,
 				93AEF7C52D8364F2006E3CBD /* GoalSelectionViewController.swift in Sources */,
 				934033B42D76E83800D2BD86 /* UIView+Radius.swift in Sources */,
 				93AEF7C12D834EA3006E3CBD /* WeelCollectionViewCell.swift in Sources */,
@@ -1092,15 +1251,20 @@
 				93DE9CF12D97D924005A026E /* SearchViewController.swift in Sources */,
 				930FC3462D9AEEC200EA63A9 /* YoutubeLinks.swift in Sources */,
 				93E480022D7C4250008AF6E4 /* ProfileSetupViewController.swift in Sources */,
+				934985A32DA110D000456481 /* BeginnerTableViewCell.swift in Sources */,
 				9340336E2D758A1600D2BD86 /* AppDelegate.swift in Sources */,
 				934033B62D76E83800D2BD86 /* UIColor+Extension.swift in Sources */,
+				937329312DA1374500577F1D /* TitleSectionHeaderView.swift in Sources */,
 				934033A62D761EC800D2BD86 /* OnboardingModel.swift in Sources */,
 				9357C5642D8C805300BC50ED /* FavoritesViewController.swift in Sources */,
 				934033702D758A1600D2BD86 /* SceneDelegate.swift in Sources */,
 				934033902D75B92300D2BD86 /* DefaultStorage.swift in Sources */,
 				936152092D79EFB800596027 /* ForgetPasswordViewController.swift in Sources */,
 				9340338C2D759DDF00D2BD86 /* SplashViewController.swift in Sources */,
+				9342D3DD2D9FF19100D293DE /* WorkoutTableViewCell.swift in Sources */,
+				934985A62DA1118600456481 /* BeginnerHeaderView.swift in Sources */,
 				937811222D985E76000A3129 /* HeaderSearchWorkAndNutriView.swift in Sources */,
+				934985942DA07D3000456481 /* IntermediateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

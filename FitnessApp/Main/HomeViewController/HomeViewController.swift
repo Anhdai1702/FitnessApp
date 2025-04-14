@@ -48,7 +48,6 @@ class HomeViewController: UIViewController {
     private var isSelectFavorite: Bool = false
     
     private var indexFitness = [IndexFitnessApp]()
-    private var a = [IndexFitness]()
     
     private var recommendationsImages: [UIImageView] = []
     private var articlesAndTipsImages: [UIImageView] = []
