@@ -18,6 +18,11 @@ struct FitnessItem: Codable {
     let recommendations: String
     let createdAt: String
     let weeklyChallenge: String
+    let titleImageWorkout: String
+    let timeWorkout: String
+    let kcalWorkout: String
+    let exercisesWorkout: String
+    let tileWorkout: String
 }
 
 struct IndexFitness: Codable {
@@ -35,8 +40,23 @@ struct IndexFitness: Codable {
     var titleHeader: String
     var isFavoriteHeader: Bool = false
     var category: String
+    var titleImageWorkout: String
+    var titleWorkout: String
+    var timeWorkout: String
+    var kcalWorkout: String
+    var exercisesWorkout: String
+    var favoriteWorkout: Bool = false
+    var titleWorkoutTableViewImage: String
+    var titleWorkoutTableViewLabel: String
+    var timeWorkoutTableViewLabel: String
+    var kcalWorkoutTableViewLabel: String
+    var exercisesWorkoutTableViewLabel: String
+    var favoriteWorkoutTableViewImage: Bool = false
 }
 
+struct listBeginner {
+    var list: [IndexFitness]
+}
 
 class FitnessAPIService {
     static let shared = FitnessAPIService() // Singleton
